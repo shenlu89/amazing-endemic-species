@@ -64,7 +64,7 @@ var images = d3.select("#images")
 
     globe = d3.select("#globe")
     .append("svg")
-    .attrs({ "preserveAspectRatio": "xMidYMid meet", "viewBox": "0 0 700 700", "width": width, "height": height });
+    .attrs({ "preserveAspectRatio": "xMidYMin meet", "viewBox": "0 0 700 700", "width": width, "height": height });
 
 circle = d3.select("#threatened")
     .append("svg")
