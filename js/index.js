@@ -213,7 +213,7 @@ d3.select("#sub")
     .text(line)
 
 d3.queue()
-    .defer(d3.json, "https://openlayers.org/en/v4.3.3/examples/data/topojson/world-110m.json")
+    .defer(d3.json, "world-110m.json")
     .await(ready);
 
 function ready(error, world) {
