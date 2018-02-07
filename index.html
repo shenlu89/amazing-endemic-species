@@ -23,25 +23,29 @@
         <br>
         <div class="specie specie__info">
             <transition appear name="status">
-                <div :class="s.status" v-show="show" v-text="s.status"></div>
+                <a target="_blank" :href="'https://en.wikipedia.org/wiki/' + wiki_status"><div :class="s.status" v-show="show" v-text="s.status"></div></a>
             </transition>
             <transition appear name="img">
-                <img class="specie__image" v-show="show" :src="'img/' + s.id + '.jpg'">
+                <a target="_blank" :href="'https://en.wikipedia.org/wiki/' + wiki_specie_name">
+                    <img class="specie__image" v-show="show" :src="'img/' + s.id + '.jpg'">
+                </a>
             </transition>
         </div>
         <br>
         <br>
-        <div style="font-style: italic" v-text="s.name"></div>
+        <a target="_blank" :href="'http://apiv3.iucnredlist.org/api/v3/website/' + red_list_binomial"><div style="font-style: italic" v-text="s.name"></div></a>
         <br>
         <div>
+            <a target="_blank" :href="'https://en.wikipedia.org/wiki/' + $options.filters.country(s.isocode)">
             <transition appear name="svg">
-                <img style="height: 14px;" v-show="show" :src="'country-flags-svg/' + new String(s.isocode).toLowerCase() + '.svg'">
+                <img style="height: 14px;" v-show="show" :src="'country-flags-svg/' + isocode + '.svg'">
             </transition>
             <transition appear name="country">
             <span style="display: inline-block" v-show="show" v-text="$options.filters.country(s.isocode)"></span>
             </transition>
+            </a>
             <img v-for="i in list" :src="'img/' + i.id + '.jpg'" v-show="false">
-            <img v-for="i in list" :src="'country-flags-svg/' + new String(i.isocode).toLowerCase() + '.svg'" v-show="false">
+            <img v-for="i in list" :src="'country-flags-svg/' + isocode + '.svg'" v-show="false">
         </div>
         <!--<button @click="show=!show">click</button>-->
         <transition appear name="slide-fade">
@@ -575,6 +579,22 @@
                     "ZM": 894,
                     "ZW": 716
                 }
+            }
+        },
+
+        computed: {
+            isocode: function(){
+                return ("" + this.s.isocode).toLowerCase();
+            },
+            wiki_specie_name: function(){
+                return ("" + this.s.name).replace(/\s/g, '_');
+            },
+            red_list_binomial: function(){
+                return ("" + this.s.name).replace(/\s/g, "%20");
+            },
+            wiki_status: function(){
+                status_hash = { EX:"Extinction", EW:"Extinct_in_the_wild", CR:"Critically_endangered", EN:"Critically_endangered", VU:"Vulnerable_species", NT:"Near-threatened_species", LC:"Least_concern", DD:"Data_deficient", NE:"Not_evaluated"};
+                return status_hash[this.s.status];
             }
         },
 
