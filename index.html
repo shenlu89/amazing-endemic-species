@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IUCN Red List Visualization</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<div id="app" class="container">
+    <div class="species">
+        <br>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/52-hz-whale/IUCN_Red_List_Visualization"
+           data-show-count="true" aria-label="Star 52-hz-whale/IUCN_Red_List_Visualization on GitHub">Star</a>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/52-hz-whale/IUCN_Red_List_Visualization/fork"
+           data-show-count="true" aria-label="Fork 52-hz-whale/IUCN_Red_List_Visualization on GitHub">Fork</a>
+        <br>
+        <h1 style="margin: 0; padding: 0.5em 0">
+            <transition-group appear href="" style="color: #c33" tag="a" @before-enter="title_beforeEnter"
+                              @enter="title_enter">
+                <span v-for="(char, index) in title.split('')" v-text="char" :key="index"></span>
+            </transition-group>
+        </h1>
+        <transition-group appear id="sub" style="font-size: 1.2em" tag="div" @before-enter="subtitle_beforeEnter"
+                          @enter="subtitle_enter">
+            <span v-for="(sub, index) in subtitle.split('')" v-text="sub" :key="index"></span>
+        </transition-group>
+        <br>
+        <div class="specie specie__info">
+            <a target="_blank" :href="'https://en.wikipedia.org/wiki/' + wiki_status">
+                <transition appear name="status">
+                    <div :class="s.status" v-show="show" v-text="s.status"></div>
+                </transition>
+            </a>
+            <a target="_blank" :href="'https://en.wikipedia.org/wiki/' + wiki_specie_name">
+                <transition appear name="img">
+                    <img class="specie__image" v-show="show" :src="'img/' + s.id + '.jpg'">
+                </transition>
+            </a>
+        </div>
+        <br>
+        <br>
+        <a target="_blank" :href="'http://apiv3.iucnredlist.org/api/v3/website/' + red_list_binomial">
+            <div style="font-style: italic" v-text="s.name"></div>
+        </a>
+        <br>
+        <div>
+            <a target="_blank" :href="'https://en.wikipedia.org/wiki/' + $options.filters.country(s.isocode)">
+                <transition appear name="svg">
+                    <img style="height: 14px;" v-show="show" :src="'country-flags-svg/' + isocode + '.svg'">
+                </transition>
+                <transition appear name="country">
+                    <span style="display: inline-block" v-show="show"
+                          v-text="$options.filters.country(s.isocode)"></span>
+                </transition>
+            </a>
+            <img v-for="i in list" :src="'img/' + i.id + '.jpg'" v-show="false">
+            <img v-for="i in list" :src="'country-flags-svg/' + isocode + '.svg'" v-show="false">
+        </div>
+        <!--<button @click="show=!show">click</button>-->
+        <transition appear name="slide-fade">
+            <div id="globe"></div>
+        </transition>
+    </div>
+    <footer>
+        <div>©2017-2018 <a href="https://github.com/52-hz-whale">@lonely whale</a> all rights reserved.
+            <div>
+    </footer>
+</div>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src='js/d3.min.js'></script>
+<script src='js/topojson.v3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+<script src='js/index.js'></script>
+</body>
+
+</html>

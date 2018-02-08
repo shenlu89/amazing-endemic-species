@@ -1,17 +1,43 @@
-# 孤鲸日志
+# IUCN Red List Visualization
 
-个人的全栈开发学习笔记
+A proj4 visulizes the species facing a risk of extinction and their stories.
 
-## Vue学习笔记
+<p align="center">
+  <a href="https://52-hz-whale.github.io/IUCN_Red_List_Visualization/" target="_blank">
+    <img src="ezgif-3-5d39ae4c8f.gif" width="700px">
+    <br>
+    Live Demo
+  </a>
+</p>
 
-- 1.[Vue学习笔记之数据异步加载和页面显示问题](https://github.com/52-hz-whale/52-hz-whale.github.io/issues/1)
-- 2.[Vue学习笔记之花括号闪现问题](https://github.com/52-hz-whale/52-hz-whale.github.io/issues/2)
-- 3.[script标签和defer与async属性](https://github.com/52-hz-whale/52-hz-whale.github.io/issues/3)
-- 4.[实现Javascript链式调用](https://github.com/52-hz-whale/52-hz-whale.github.io/issues/4)
-- 5.[巧用Linux命令之批量resize图片大小](https://github.com/52-hz-whale/52-hz-whale.github.io/issues/5)
+## Features
 
+- D3
+  - Topojson help convert the GeoJson format to TopoJson.
+  - D3-geo calculate the path and map to projection.
+- Single-file Vue
+  - Axios for HTTP request JSON file storing species' data.
+  - Serve with hot reload
+- Animation
+  - Transition animation when switching species' views
+  - D3-transition animation when first appearing text and tweening globe during switching species' views.
+- Optimize Performance
+  - Minify species' JPG images via [TinyPNG](tinypng.com)
+  - Fixed position for animation chunks
 
-## 常用工具
+## Build Setup
 
-- GIF制作工具: [ezgif](https://ezgif.com/)
-- Web录屏工具(Chrome插件): Awesome Screenshot
+```bash
+open directory
+cd IUCN_Red_List_Visualization
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:5000
+serve -c
+```
+
+## License
+
+MIT
