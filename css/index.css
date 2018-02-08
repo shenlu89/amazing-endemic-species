@@ -201,7 +201,7 @@ text {
 #globe {
     position: fixed;
     left: 0;
-    top: 380px;
+    top: 420px;
     width: 100%;
     text-align: center;
 }
@@ -238,8 +238,6 @@ svg {
 
 .specie__image {
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
     max-width: 100%;
     margin: 0 auto;
     cursor: pointer;
