@@ -50,7 +50,7 @@
         <div>
             <a target="_blank" :href="'https://en.wikipedia.org/wiki/' + $options.filters.country(s.isocode)">
                 <transition appear name="svg">
-                    <img style="height: 14px;" v-show="show" :src="'country-flags-svg/' + isocode + '.svg'">
+                    <img style="height: 14px;" v-show="show" :src="'country-flags-svg/' + ('' + s.isocode).toLowerCase() + '.svg'">
                 </transition>
                 <transition appear name="country">
                     <span style="display: inline-block" v-show="show"
@@ -58,9 +58,8 @@
                 </transition>
             </a>
             <img v-for="i in list" :src="'img/' + i.id + '.jpg'" v-show="false">
-            <img v-for="i in list" :src="'country-flags-svg/' + isocode + '.svg'" v-show="false">
+            <img v-for="i in list" :src="'country-flags-svg/' + ('' + i.isocode).toLowerCase() + '.svg'" v-show="false">
         </div>
-        <!--<button @click="show=!show">click</button>-->
         <transition appear name="slide-fade">
             <div id="globe"></div>
         </transition>

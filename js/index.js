@@ -519,9 +519,6 @@ var vm = new Vue({
     },
 
     computed: {
-        isocode: function(s){
-            return ("" + this.s.isocode).toLowerCase();
-        },
         wiki_specie_name: function(){
             return ("" + this.s.name).replace(/\s/g, '_');
         },
@@ -529,7 +526,7 @@ var vm = new Vue({
             return ("" + this.s.name).replace(/\s/g, "%20");
         },
         wiki_status: function(){
-            status_hash = { EX:"Extinction", EW:"Extinct_in_the_wild", CR:"Critically_endangered", EN:"Critically_endangered", VU:"Vulnerable_species", NT:"Near-threatened_species", LC:"Least_concern", DD:"Data_deficient", NE:"Not_evaluated"};
+            let status_hash = { EX:"Extinction", EW:"Extinct_in_the_wild", CR:"Critically_endangered", EN:"Critically_endangered", VU:"Vulnerable_species", NT:"Near-threatened_species", LC:"Least_concern", DD:"Data_deficient", NE:"Not_evaluated"};
             return status_hash[this.s.status];
         }
     },
@@ -657,8 +654,8 @@ var vm = new Vue({
                     .on("end", step),
 
                 species_codes = d3.shuffle(_this3.species);
-            _this3.list = species_codes.slice(0, 3);
-            iso_map = this.iso_map;
+            _this3.list = species_codes.slice(0, 2);
+            let iso_map = this.iso_map;
 
 //                setTimeout(step, 5000);
 
