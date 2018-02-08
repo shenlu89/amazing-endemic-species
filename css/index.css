@@ -33,7 +33,7 @@ html {
     position: relative;
     min-height: 100%;
     padding-bottom: 4em;
-    padding-top: 4rem;
+    /*padding-top: 4rem;*/
 }
 
 footer {
@@ -201,7 +201,7 @@ text {
 #globe {
     position: fixed;
     left: 0;
-    top: 420px;
+    top: 380px;
     width: 100%;
     text-align: center;
 }

@@ -1,0 +1,25 @@
+{
+  "name": "iucn_red_list_visualization",
+  "version": "1.0.0",
+  "description": "A proj4 visulizes the species facing a risk of extinction and their stories.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/52-hz-whale/IUCN_Red_List_Visualization.git"
+  },
+  "keywords": [
+    "iucn",
+    "redlist",
+    "vue.js",
+    "d3.js"
+  ],
+  "author": "lonely whale",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/52-hz-whale/IUCN_Red_List_Visualization/issues"
+  },
+  "homepage": "https://github.com/52-hz-whale/IUCN_Red_List_Visualization#readme"
+}
