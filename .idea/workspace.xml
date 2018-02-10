@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="283941f0-5d5c-498b-b710-ae26d966a1fa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -101,11 +99,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="276" />
-    <option name="y" value="103" />
-    <option name="width" value="1400" />
-    <option name="height" value="823" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="314" />
+    <option name="y" value="117" />
+    <option name="width" value="1241" />
+    <option name="height" value="794" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -179,15 +177,15 @@
       <option name="presentableId" value="Default" />
       <updated>1515558580637</updated>
       <workItem from="1515558581836" duration="7764000" />
-      <workItem from="1518090541068" duration="1175000" />
+      <workItem from="1518090541068" duration="1774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8939000" />
+    <option name="totallyTimeSpent" value="9538000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1922" height="1033" extended-state="7" />
+    <frame x="-1" y="24" width="1922" height="1033" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11913548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

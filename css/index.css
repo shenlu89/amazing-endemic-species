@@ -209,6 +209,7 @@ text {
 img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     z-index: -1;
 }
 
@@ -254,6 +255,7 @@ svg {
     border-radius: 50%;
     line-height: 2rem;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .LC {
