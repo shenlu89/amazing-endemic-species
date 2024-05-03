@@ -1,0 +1,632 @@
+[
+  {
+    "id": "196661",
+    "name": "Varanus juxtindicus",
+    "status": "LC",
+    "group": "REPTILIA",
+    "code": "SB"
+  },
+  {
+    "id": "22728410",
+    "name": "Antilophia bokermanni",
+    "status": "CR",
+    "group": "AVES",
+    "code": "BR"
+  },
+  {
+    "id": "136777",
+    "name": "Natalus primus",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "CU"
+  },
+  {
+    "id": "193482",
+    "name": "Calumma tarzan",
+    "status": "CR",
+    "group": "REPTILIA",
+    "code": "MG"
+  },
+  {
+    "id": "5962",
+    "name": "Cuora trifasciata",
+    "status": "CR",
+    "group": "REPTILIA",
+    "code": "CN"
+  },
+  {
+    "id": "19495",
+    "name": "rhinoceros sondaicus",
+    "status": "CR",
+    "group": "MAMMALIA",
+    "code": "BD"
+  },
+  {
+    "id": "6553",
+    "name": "Dicerorhinus sumatrensis",
+    "status": "CR",
+    "group": "MAMMALIA",
+    "code": "BD"
+  },
+  {
+    "id": "21975",
+    "name": "Tolypeutes tricinctus",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "BR"
+  },
+  {
+    "id": "49002226",
+    "name": "Nepenthes rigidifolia",
+    "status": "CR",
+    "group": "MAGNOLIOPSIDA",
+    "code": "ID"
+  },
+  {
+    "id": "10355",
+    "name": "Bokermannohyla izecksohni",
+    "status": "CR",
+    "group": "AMPHIBIA",
+    "code": "BR"
+  },
+  {
+    "id": "22698691",
+    "name": "Pitta megarhyncha",
+    "status": "NT",
+    "group": "AVES",
+    "code": "BD"
+  },
+  {
+    "id": "4162",
+    "name": "Cephalorhynchus hectori",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "NZ"
+  },
+  {
+    "id": "984",
+    "name": "Amanipodagrion gilliesi",
+    "status": "CR",
+    "group": "INSECTA",
+    "code": "TZ"
+  },
+  {
+    "id": "3172",
+    "name": "Incilius periglenes",
+    "status": "EX",
+    "group": "AMPHIBIA",
+    "code": "CR"
+  },
+  {
+    "id": "58979",
+    "name": "Rhacophorus bifasciatus",
+    "status": "NT",
+    "group": "AMPHIBIA",
+    "code": "ID"
+  },
+  {
+    "id": "18267",
+    "name": "Procyon pygmaeus",
+    "status": "CR",
+    "group": "MAMMALIA",
+    "code": "MX"
+  },
+  {
+    "id": "199541",
+    "name": "Seselphisis visenda",
+    "status": "EN",
+    "group": "INSECTA",
+    "code": "SC"
+  },
+  {
+    "id": "39149",
+    "name": "Cryptomeria japonica",
+    "status": "NT",
+    "group": "PINOPSIDA",
+    "code": "JP"
+  },
+  {
+    "id": "2057",
+    "name": "Arctocephalus galapagoensis",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "EC"
+  },
+  {
+    "id": "22685760",
+    "name": "Ognorhynchus icterotis",
+    "status": "EN",
+    "group": "AVES",
+    "code": "CO"
+  },
+  {
+    "id": "14760",
+    "name": "Nicrophorus americanus",
+    "status": "CR",
+    "group": "INSECTA",
+    "code": "US"
+  },
+  {
+    "id": "41690",
+    "name": "Arctictis binturong",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "BD"
+  },
+  {
+    "id": "32916",
+    "name": "Erythrina schliebenii",
+    "status": "CR",
+    "group": "MAGNOLIOPSIDA",
+    "code": "TZ"
+  },
+  {
+    "id": "61425",
+    "name": "Archaius tigris",
+    "status": "EN",
+    "group": "REPTILIA",
+    "code": "SC"
+  },
+  {
+    "id": "15050",
+    "name": "Ochotona iliensis",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "CN"
+  },
+  {
+    "id": "21247820",
+    "name": "Bertia cambojiensis",
+    "status": "CR",
+    "group": "GASTROPODA",
+    "code": "VN"
+  },
+  {
+    "id": "30385",
+    "name": "Clianthus puniceus",
+    "status": "EN",
+    "group": "MAGNOLIOPSIDA",
+    "code": "NZ"
+  },
+  {
+    "id": "22806",
+    "name": "Uromys rex",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "SB"
+  },
+  {
+    "id": "178627",
+    "name": "Bitis peringueyi",
+    "status": "LC",
+    "group": "REPTILIA",
+    "code": "NA"
+  },
+  {
+    "id": "34298",
+    "name": "Brachyglottis huntii",
+    "status": "VU",
+    "group": "MAGNOLIOPSIDA",
+    "code": "NZ"
+  },
+  {
+    "id": "45353580",
+    "name": "Apteryx mantelli",
+    "status": "VU",
+    "group": "AVES",
+    "code": "NZ"
+  },
+  {
+    "id": "38465",
+    "name": "Carpoxylon macrospermum",
+    "status": "CR",
+    "group": "LILIOPSIDA",
+    "code": "VU"
+  },
+  {
+    "id": "165861",
+    "name": "Holacanthus clarionensis",
+    "status": "VU",
+    "group": "ACTINOPTERYGII",
+    "code": "MX"
+  },
+  {
+    "id": "172861",
+    "name": "Calumma nasutum",
+    "status": "LC",
+    "group": "REPTILIA",
+    "code": "MG"
+  },
+  {
+    "id": "3036",
+    "name": "Bradypus torquatus",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "BR"
+  },
+  {
+    "id": "12559",
+    "name": "Macaca silenus",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "IN"
+  },
+  {
+    "id": "169395",
+    "name": "Zoogoneticus tequila",
+    "status": "CR",
+    "group": "ACTINOPTERYGII",
+    "code": "MX"
+  },
+  {
+    "id": "38723",
+    "name": "Voanioala gerardii",
+    "status": "CR",
+    "group": "LILIOPSIDA",
+    "code": "MG"
+  },
+  {
+    "id": "136372",
+    "name": "Vandeleuria nilagirica",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "IN"
+  },
+  {
+    "id": "19750",
+    "name": "Rousettus madagascariensis",
+    "status": "NT",
+    "group": "MAMMALIA",
+    "code": "MG"
+  },
+  {
+    "id": "136309",
+    "name": "Rhynchocyon udzungwensis",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "TZ"
+  },
+  {
+    "id": "19705",
+    "name": "Rhynchocyon chrysopygus",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "KE"
+  },
+  {
+    "id": "22694103",
+    "name": "Rhinoptilus bitorquatus",
+    "status": "CR",
+    "group": "AVES",
+    "code": "IN"
+  },
+  {
+    "id": "30732",
+    "name": "Quercus hintonii",
+    "status": "CR",
+    "group": "MAGNOLIOPSIDA",
+    "code": "MX"
+  },
+  {
+    "id": "41586",
+    "name": "Pseudalopex fulvipes",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "CL"
+  },
+  {
+    "id": "17902",
+    "name": "Polposipus herculeanus",
+    "status": "VU",
+    "group": "INSECTA",
+    "code": "SC"
+  },
+  {
+    "id": "22696012",
+    "name": "Pithecophaga jefferyi",
+    "status": "CR",
+    "group": "AVES",
+    "code": "PH"
+  },
+  {
+    "id": "33924",
+    "name": "Pinus rzedowskii",
+    "status": "VU",
+    "group": "PINOPSIDA",
+    "code": "MX"
+  },
+  {
+    "id": "15419",
+    "name": "Orcaella brevirostris",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "AU"
+  },
+  {
+    "id": "15188",
+    "name": "Okapia johnstoni",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "CD"
+  },
+  {
+    "id": "14709",
+    "name": "Nesoryzomys swarthi",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "EC"
+  },
+  {
+    "id": "54837",
+    "name": "Nectophrynoides asperginis",
+    "status": "EW",
+    "group": "AMPHIBIA",
+    "code": "TZ"
+  },
+  {
+    "id": "1089",
+    "name": "Neamblysomus julianae",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "ZA"
+  },
+  {
+    "id": "14288",
+    "name": "Myzopoda aurita",
+    "status": "LC",
+    "group": "MAMMALIA",
+    "code": "MG"
+  },
+  {
+    "id": "14136",
+    "name": "Myotis sodalis",
+    "status": "NT",
+    "group": "MAMMALIA",
+    "code": "US"
+  },
+  {
+    "id": "22711063",
+    "name": "Mimus trifasciatus",
+    "status": "EN",
+    "group": "AVES",
+    "code": "EC"
+  },
+  {
+    "id": "42107",
+    "name": "Microcycas calocoma",
+    "status": "CR",
+    "group": "CYCADOPSIDA",
+    "code": "CU"
+  },
+  {
+    "id": "19672693",
+    "name": "Ixalidium transiens",
+    "status": "VU",
+    "group": "INSECTA",
+    "code": "TZ"
+  },
+  {
+    "id": "187435",
+    "name": "Halichoeres socialis",
+    "status": "EN",
+    "group": "ACTINOPTERYGII",
+    "code": "BZ"
+  },
+  {
+    "id": "4967",
+    "name": "Glyptemys muhlenbergii",
+    "status": "CR",
+    "group": "REPTILIA",
+    "code": "US"
+  },
+  {
+    "id": "22721839",
+    "name": "Geothlypis beldingi",
+    "status": "VU",
+    "group": "AVES",
+    "code": "MX"
+  },
+  {
+    "id": "43995",
+    "name": "Erioderma pedicellatum",
+    "status": "CR",
+    "group": "LECANOROMYCETES",
+    "code": "CA"
+  },
+  {
+    "id": "7866",
+    "name": "Epioblasma capsaeformis",
+    "status": "EN",
+    "group": "BIVALVIA",
+    "code": "US"
+  },
+  {
+    "id": "41889",
+    "name": "Encephalartos hirsutus",
+    "status": "CR",
+    "group": "CYCADOPSIDA",
+    "code": "ZA"
+  },
+  {
+    "id": "158613",
+    "name": "Ecnomiohyla rabborum",
+    "status": "CR",
+    "group": "AMPHIBIA",
+    "code": "PA"
+  },
+  {
+    "id": "6852",
+    "name": "Dryococelus australis",
+    "status": "CR",
+    "group": "INSECTA",
+    "code": "AU"
+  },
+  {
+    "id": "6306",
+    "name": "Deinacrida rugosa",
+    "status": "VU",
+    "group": "INSECTA",
+    "code": "NZ"
+  },
+  {
+    "id": "5957",
+    "name": "Cuora yunnanensis",
+    "status": "CR",
+    "group": "REPTILIA",
+    "code": "CN"
+  },
+  {
+    "id": "5760",
+    "name": "Cryptoprocta ferox",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "MG"
+  },
+  {
+    "id": "30366",
+    "name": "Cryosophila williamsii",
+    "status": "EW",
+    "group": "LILIOPSIDA",
+    "code": "HN"
+  },
+  {
+    "id": "22728472",
+    "name": "Centrocercus minimus",
+    "status": "EN",
+    "group": "AVES",
+    "code": "US"
+  },
+  {
+    "id": "3989",
+    "name": "Casarea dussumieri",
+    "status": "EN",
+    "group": "REPTILIA",
+    "code": "MU"
+  },
+  {
+    "id": "22689809",
+    "name": "Antrostomus noctitherus",
+    "status": "EN",
+    "group": "AVES",
+    "code": "PR"
+  },
+  {
+    "id": "61618",
+    "name": "Calendula maritima",
+    "status": "CR",
+    "group": "MAGNOLIOPSIDA",
+    "code": "IT"
+  },
+  {
+    "id": "3083",
+    "name": "Brookesia perarmata",
+    "status": "EN",
+    "group": "REPTILIA",
+    "code": "MG"
+  },
+  {
+    "id": "135295",
+    "name": "Bombus franklini",
+    "status": "CR",
+    "group": "INSECTA",
+    "code": "US"
+  },
+  {
+    "id": "6234",
+    "name": "Beatragus hunteri",
+    "status": "CR",
+    "group": "MAMMALIA",
+    "code": "KE"
+  },
+  {
+    "id": "10952",
+    "name": "Batagur trivittata",
+    "status": "EN",
+    "group": "REPTILIA",
+    "code": "MM"
+  },
+  {
+    "id": "54444",
+    "name": "Barbourula kalimantanensis",
+    "status": "EN",
+    "group": "AMPHIBIA",
+    "code": "ID"
+  },
+  {
+    "id": "57703",
+    "name": "Balebreviceps hillmani",
+    "status": "CR",
+    "group": "AMPHIBIA",
+    "code": "ET"
+  },
+  {
+    "id": "60286",
+    "name": "Azuragrion granti",
+    "status": "NT",
+    "group": "INSECTA",
+    "code": "YE"
+  },
+  {
+    "id": "22680380",
+    "name": "Aythya innotata",
+    "status": "CR",
+    "group": "AVES",
+    "code": "MG"
+  },
+  {
+    "id": "9016",
+    "name": "Astrochelys yniphora",
+    "status": "CR",
+    "group": "REPTILIA",
+    "code": "MG"
+  },
+  {
+    "id": "16559",
+    "name": "Pentalagus furnessi",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "JP"
+  },
+  {
+    "id": "56765",
+    "name": "Craugastor milesi",
+    "status": "CR",
+    "group": "AMPHIBIA",
+    "code": "HN"
+  },
+  {
+    "id": "63563",
+    "name": "Poecilotheria metallica",
+    "status": "CR",
+    "group": "ARACHNIDA",
+    "code": "IN"
+  },
+  {
+    "id": "55219",
+    "name": "Ameerega cainarachi",
+    "status": "VU",
+    "group": "AMPHIBIA",
+    "code": "PE"
+  },
+  {
+    "id": "22717428",
+    "name": "Alauda razae",
+    "status": "CR",
+    "group": "AVES",
+    "code": "CV"
+  },
+  {
+    "id": "867",
+    "name": "Alligator sinensis",
+    "status": "CR",
+    "group": "REPTILIA",
+    "code": "CN"
+  },
+  {
+    "id": "1095",
+    "name": "Ambystoma mexicanum",
+    "status": "CR",
+    "group": "AMPHIBIA",
+    "code": "MX"
+  }
+]
