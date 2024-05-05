@@ -25,6 +25,7 @@ const Footer: NextPage = () => {
               className="flex hover:text-black mx-2"
               href={"https://twitter.com/shenlu89"}
               target={"_blank"}
+              title="X"
             >
               <FaXTwitter className="w-6 h-6" />
             </Link>
@@ -34,6 +35,7 @@ const Footer: NextPage = () => {
               className="flex hover:text-black dark:hover:text-white"
               href="https://github.com/shenlu89/amazing-endemic-species"
               target={"_blank"}
+              title="GitHub"
             >
               <FaGithub className="w-6 h-6" />
             </Link>
