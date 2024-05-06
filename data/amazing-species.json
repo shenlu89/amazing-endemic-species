@@ -628,5 +628,75 @@
     "status": "CR",
     "group": "AMPHIBIA",
     "code": "MX"
+  },
+  {
+    "id": "712",
+    "name": "Ailuropoda melanoleuca",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "CN"
+  },
+  {
+    "id": "16892",
+    "name": "Phascolarctos cinereus",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "AU"
+  },
+  {
+    "id": "12119",
+    "name": "Lipotes vexillifer",
+    "status": "CR",
+    "group": "MAMMALIA",
+    "code": "CN"
+  },
+  {
+    "id": "22705787",
+    "name": "Urocissa ornata",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "LK"
+  },
+  {
+    "id": "58567",
+    "name": "Pelophylax cerigensis",
+    "status": "CR",
+    "group": "AMPHIBIA",
+    "code": "GR"
+  },
+  {
+    "id": "29432",
+    "name": "Ameerega planipaleae",
+    "status": "CR",
+    "group": "AMPHIBIA",
+    "code": "PE"
+  },
+  {
+    "id": "22046",
+    "name": "Tragelaphus buxtoni",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "ET"
+  },
+  {
+    "id": "43899",
+    "name": "Alouatta palliata ssp. coibensis",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "PA"
+  },
+  {
+    "id": "11496",
+    "name": "Lemur catta",
+    "status": "EN",
+    "group": "MAMMALIA",
+    "code": "MG"
+  },
+  {
+    "id": "19819",
+    "name": "Saguinus leucopus",
+    "status": "VU",
+    "group": "MAMMALIA",
+    "code": "CO"
   }
 ]
