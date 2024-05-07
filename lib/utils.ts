@@ -4,4 +4,4 @@ const random = (min: number, max: number) => {
 
 const objToMap = (object: any) => new Map(Object.entries(object));
 
-export {random, objToMap};
+export { random, objToMap };
