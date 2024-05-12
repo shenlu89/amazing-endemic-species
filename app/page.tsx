@@ -25,7 +25,7 @@ export default function Home() {
     image: "",
     name: "",
     status: "",
-    country: "",
+    code: "",
     commonName: "",
   });
   const [isLoaded, setIsLoaded] = useState(false);
@@ -130,13 +130,7 @@ export default function Home() {
       earth
         .transition()
         .call(async () => {
-          setSpecies({
-            image: _species.image,
-            name: _species.name,
-            status: _species.status,
-            country: _species.code,
-            commonName: _species.common_name,
-          });
+          setSpecies(_species);
           setIsLoaded(false);
           _species = await mutate("/api/v1/random");
         })
@@ -255,11 +249,11 @@ export default function Home() {
               {species.name}
             </Link>
             <Link
-              href={WIKI_URI + COUNTRY_NAME.get(species.country)}
+              href={WIKI_URI + COUNTRY_NAME.get(species.code)}
               target="_blank"
               className="hover:text-red-600"
-            >{`${species.country && getUnicodeFlagIcon(species.country)} ${
-              species.country && COUNTRY_NAME.get(species.country)
+            >{`${species.code && getUnicodeFlagIcon(species.code)} ${
+              species.code && COUNTRY_NAME.get(species.code)
             }`}</Link>
           </div>
         ) : (
