@@ -119,7 +119,7 @@ export default function Home() {
       .delay(3500)
       .on("end", step);
 
-    async function step() {
+    function step() {
       const index = indexOfCountries(_species, countries);
 
       earth
@@ -131,7 +131,7 @@ export default function Home() {
         .transition()
         .call(async () => {
           setSpecies({
-            image: _species.id,
+            image: _species.image,
             name: _species.name,
             status: _species.status,
             country: _species.code,
@@ -217,7 +217,7 @@ export default function Home() {
             target="_blank"
           >
             <Image
-              src={`/images/${species.image}.jpg`}
+              src={species.image}
               width={130}
               height={130}
               alt=""
