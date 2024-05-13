@@ -3,7 +3,7 @@
     "id": "712",
     "name": "Ailuropoda melanoleuca",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "CN",
     "commonName": "Giant Panda"
   },
@@ -11,7 +11,7 @@
     "id": "16892",
     "name": "Phascolarctos cinereus",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "AU",
     "commonName": "Koala"
   },
@@ -19,7 +19,7 @@
     "id": "12119",
     "name": "Lipotes vexillifer",
     "status": "CR",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "CN",
     "commonName": "Yangtze River Dolphin"
   },
@@ -27,7 +27,7 @@
     "id": "22705787",
     "name": "Urocissa ornata",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "LK",
     "commonName": "Sri Lanka Blue Magpie"
   },
@@ -35,7 +35,7 @@
     "id": "58567",
     "name": "Pelophylax cerigensis",
     "status": "CR",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "GR",
     "commonName": "Karpathos Frog"
   },
@@ -43,7 +43,7 @@
     "id": "29432",
     "name": "Ameerega planipaleae",
     "status": "CR",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "PE",
     "commonName": "Oxapampa Poison Frog"
   },
@@ -51,7 +51,7 @@
     "id": "22046",
     "name": "Tragelaphus buxtoni",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "ET",
     "commonName": "Mountain Nyala"
   },
@@ -59,7 +59,7 @@
     "id": "43899",
     "name": "Alouatta palliata ssp. coibensis",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "PA",
     "commonName": "Coiba Island Howler Monkey"
   },
@@ -67,7 +67,7 @@
     "id": "11496",
     "name": "Lemur catta",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "MG",
     "commonName": "Ring-tailed Lemur"
   },
@@ -75,7 +75,7 @@
     "id": "19819",
     "name": "Saguinus leucopus",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "CO",
     "commonName": "Silvery-brown Tamarin"
   },
@@ -83,7 +83,7 @@
     "id": "196661",
     "name": "Varanus juxtindicus",
     "status": "LC",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "SB",
     "commonName": "Rennell Island Monitor"
   },
@@ -91,7 +91,7 @@
     "id": "22728410",
     "name": "Antilophia bokermanni",
     "status": "CR",
-    "group": "AVES",
+    "class": "AVES",
     "code": "BR",
     "commonName": "Araripe Manakin"
   },
@@ -99,7 +99,7 @@
     "id": "136777",
     "name": "Natalus primus",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "CU",
     "commonName": "Cuban Greater Funnel-eared Bat"
   },
@@ -107,7 +107,7 @@
     "id": "193482",
     "name": "Calumma tarzan",
     "status": "CR",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "MG",
     "commonName": "Calumma tarzan"
   },
@@ -115,7 +115,7 @@
     "id": "5962",
     "name": "Cuora trifasciata",
     "status": "CR",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "CN",
     "commonName": "Cuora trifasciata"
   },
@@ -123,7 +123,7 @@
     "id": "19495",
     "name": "rhinoceros sondaicus",
     "status": "CR",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "BD",
     "commonName": "Javan Rhinoceros"
   },
@@ -131,7 +131,7 @@
     "id": "6553",
     "name": "Dicerorhinus sumatrensis",
     "status": "CR",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "BD",
     "commonName": "Sumatran Rhinoceros"
   },
@@ -139,7 +139,7 @@
     "id": "21975",
     "name": "Tolypeutes tricinctus",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "BR",
     "commonName": "Brazilian Three-banded Armadillo"
   },
@@ -147,7 +147,7 @@
     "id": "49002226",
     "name": "Nepenthes rigidifolia",
     "status": "CR",
-    "group": "MAGNOLIOPSIDA",
+    "class": "MAGNOLIOPSIDA",
     "code": "ID",
     "commonName": "Nepenthes rigidifolia"
   },
@@ -155,7 +155,7 @@
     "id": "10355",
     "name": "Bokermannohyla izecksohni",
     "status": "CR",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "BR",
     "commonName": "Izecksohn's Treefrog"
   },
@@ -163,7 +163,7 @@
     "id": "22698691",
     "name": "Pitta megarhyncha",
     "status": "NT",
-    "group": "AVES",
+    "class": "AVES",
     "code": "BD",
     "commonName": "Mangrove Pitta"
   },
@@ -171,7 +171,7 @@
     "id": "4162",
     "name": "Cephalorhynchus hectori",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "NZ",
     "commonName": "Hector's Dolphin"
   },
@@ -179,7 +179,7 @@
     "id": "984",
     "name": "Amanipodagrion gilliesi",
     "status": "CR",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "TZ",
     "commonName": "Amanipodagrion gilliesi"
   },
@@ -187,7 +187,7 @@
     "id": "3172",
     "name": "Incilius periglenes",
     "status": "EX",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "CR",
     "commonName": "Golden Toad"
   },
@@ -195,7 +195,7 @@
     "id": "58979",
     "name": "Rhacophorus bifasciatus",
     "status": "NT",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "ID",
     "commonName": "Rhacophorus bifasciatus"
   },
@@ -203,7 +203,7 @@
     "id": "18267",
     "name": "Procyon pygmaeus",
     "status": "CR",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "MX",
     "commonName": "Pygmy Raccoon"
   },
@@ -211,7 +211,7 @@
     "id": "199541",
     "name": "Seselphisis visenda",
     "status": "EN",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "SC",
     "commonName": "Seychelles Predatory Bush-Cricket"
   },
@@ -219,7 +219,7 @@
     "id": "39149",
     "name": "Cryptomeria japonica",
     "status": "NT",
-    "group": "PINOPSIDA",
+    "class": "PINOPSIDA",
     "code": "JP",
     "commonName": "Japanese Cedar"
   },
@@ -227,7 +227,7 @@
     "id": "2057",
     "name": "Arctocephalus galapagoensis",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "EC",
     "commonName": "Galápagos Fur Seal"
   },
@@ -235,7 +235,7 @@
     "id": "22685760",
     "name": "Ognorhynchus icterotis",
     "status": "EN",
-    "group": "AVES",
+    "class": "AVES",
     "code": "CO",
     "commonName": "Yellow-eared Parrot"
   },
@@ -243,7 +243,7 @@
     "id": "14760",
     "name": "Nicrophorus americanus",
     "status": "CR",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "US",
     "commonName": "American Burying Beetle"
   },
@@ -251,7 +251,7 @@
     "id": "41690",
     "name": "Arctictis binturong",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "BD",
     "commonName": "Binturong"
   },
@@ -259,7 +259,7 @@
     "id": "32916",
     "name": "Erythrina schliebenii",
     "status": "CR",
-    "group": "MAGNOLIOPSIDA",
+    "class": "MAGNOLIOPSIDA",
     "code": "TZ",
     "commonName": "Erythrina schliebenii"
   },
@@ -267,7 +267,7 @@
     "id": "61425",
     "name": "Archaius tigris",
     "status": "EN",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "SC",
     "commonName": "Tiger Chameleon"
   },
@@ -275,7 +275,7 @@
     "id": "15050",
     "name": "Ochotona iliensis",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "CN",
     "commonName": "Ili Pika"
   },
@@ -283,7 +283,7 @@
     "id": "21247820",
     "name": "Bertia cambojiensis",
     "status": "CR",
-    "group": "GASTROPODA",
+    "class": "GASTROPODA",
     "code": "VN",
     "commonName": "Bertia cambojiensis"
   },
@@ -291,7 +291,7 @@
     "id": "30385",
     "name": "Clianthus puniceus",
     "status": "EN",
-    "group": "MAGNOLIOPSIDA",
+    "class": "MAGNOLIOPSIDA",
     "code": "NZ",
     "commonName": "kākā beak"
   },
@@ -299,7 +299,7 @@
     "id": "22806",
     "name": "Uromys rex",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "SB",
     "commonName": "King Rat"
   },
@@ -307,7 +307,7 @@
     "id": "178627",
     "name": "Bitis peringueyi",
     "status": "LC",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "NA",
     "commonName": "Peringuey's Adder"
   },
@@ -315,7 +315,7 @@
     "id": "34298",
     "name": "Brachyglottis huntii",
     "status": "VU",
-    "group": "MAGNOLIOPSIDA",
+    "class": "MAGNOLIOPSIDA",
     "code": "NZ",
     "commonName": "Chatham Island Christmas tree"
   },
@@ -323,7 +323,7 @@
     "id": "45353580",
     "name": "Apteryx mantelli",
     "status": "VU",
-    "group": "AVES",
+    "class": "AVES",
     "code": "NZ",
     "commonName": "North Island Brown Kiwi"
   },
@@ -331,7 +331,7 @@
     "id": "38465",
     "name": "Carpoxylon macrospermum",
     "status": "CR",
-    "group": "LILIOPSIDA",
+    "class": "LILIOPSIDA",
     "code": "VU",
     "commonName": "Carpoxylon macrospermum"
   },
@@ -339,7 +339,7 @@
     "id": "165861",
     "name": "Holacanthus clarionensis",
     "status": "VU",
-    "group": "ACTINOPTERYGII",
+    "class": "ACTINOPTERYGII",
     "code": "MX",
     "commonName": "Clarion Angelfish"
   },
@@ -347,7 +347,7 @@
     "id": "172861",
     "name": "Calumma nasutum",
     "status": "LC",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "MG",
     "commonName": "Nose-horned Chameleon"
   },
@@ -355,7 +355,7 @@
     "id": "3036",
     "name": "Bradypus torquatus",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "BR",
     "commonName": "Maned Three-toed Sloth"
   },
@@ -363,7 +363,7 @@
     "id": "12559",
     "name": "Macaca silenus",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "IN",
     "commonName": "Lion-tailed Macaque"
   },
@@ -371,7 +371,7 @@
     "id": "169395",
     "name": "Zoogoneticus tequila",
     "status": "CR",
-    "group": "ACTINOPTERYGII",
+    "class": "ACTINOPTERYGII",
     "code": "MX",
     "commonName": "Tequila Splitfin"
   },
@@ -379,7 +379,7 @@
     "id": "38723",
     "name": "Voanioala gerardii",
     "status": "CR",
-    "group": "LILIOPSIDA",
+    "class": "LILIOPSIDA",
     "code": "MG",
     "commonName": "Voanioala gerardii"
   },
@@ -387,7 +387,7 @@
     "id": "136372",
     "name": "Vandeleuria nilagirica",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "IN",
     "commonName": "Nilgiri Long-tailed Tree Mouse"
   },
@@ -395,7 +395,7 @@
     "id": "19750",
     "name": "Rousettus madagascariensis",
     "status": "NT",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "MG",
     "commonName": "Madagascan Rousette"
   },
@@ -403,7 +403,7 @@
     "id": "136309",
     "name": "Rhynchocyon udzungwensis",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "TZ",
     "commonName": "Grey-faced Sengi"
   },
@@ -411,7 +411,7 @@
     "id": "19705",
     "name": "Rhynchocyon chrysopygus",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "KE",
     "commonName": "Golden-rumped Sengi"
   },
@@ -419,7 +419,7 @@
     "id": "22694103",
     "name": "Rhinoptilus bitorquatus",
     "status": "CR",
-    "group": "AVES",
+    "class": "AVES",
     "code": "IN",
     "commonName": "Jerdon's Courser"
   },
@@ -427,7 +427,7 @@
     "id": "30732",
     "name": "Quercus hintonii",
     "status": "CR",
-    "group": "MAGNOLIOPSIDA",
+    "class": "MAGNOLIOPSIDA",
     "code": "MX",
     "commonName": "Encino prieto "
   },
@@ -435,7 +435,7 @@
     "id": "41586",
     "name": "Pseudalopex fulvipes",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "CL",
     "commonName": "Darwin's Fox"
   },
@@ -443,7 +443,7 @@
     "id": "17902",
     "name": "Polposipus herculeanus",
     "status": "VU",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "SC",
     "commonName": "Frigate Island Giant Tenebrionid Beetle"
   },
@@ -451,7 +451,7 @@
     "id": "22696012",
     "name": "Pithecophaga jefferyi",
     "status": "CR",
-    "group": "AVES",
+    "class": "AVES",
     "code": "PH",
     "commonName": "Philippine Eagle"
   },
@@ -459,7 +459,7 @@
     "id": "33924",
     "name": "Pinus rzedowskii",
     "status": "VU",
-    "group": "PINOPSIDA",
+    "class": "PINOPSIDA",
     "code": "MX",
     "commonName": "Rzedowski's Pine"
   },
@@ -467,7 +467,7 @@
     "id": "15419",
     "name": "Orcaella brevirostris",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "AU",
     "commonName": "Irrawaddy Dolphin"
   },
@@ -475,7 +475,7 @@
     "id": "15188",
     "name": "Okapia johnstoni",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "CD",
     "commonName": "Okapi"
   },
@@ -483,7 +483,7 @@
     "id": "14709",
     "name": "Nesoryzomys swarthi",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "EC",
     "commonName": "Santiago Galapagos Mouse"
   },
@@ -491,7 +491,7 @@
     "id": "54837",
     "name": "Nectophrynoides asperginis",
     "status": "EW",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "TZ",
     "commonName": "Kihansi Spray Toad"
   },
@@ -499,7 +499,7 @@
     "id": "1089",
     "name": "Neamblysomus julianae",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "ZA",
     "commonName": "Juliana's Golden Mole"
   },
@@ -507,7 +507,7 @@
     "id": "14288",
     "name": "Myzopoda aurita",
     "status": "LC",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "MG",
     "commonName": "Eastern Sucker-footed Bat"
   },
@@ -515,7 +515,7 @@
     "id": "14136",
     "name": "Myotis sodalis",
     "status": "NT",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "US",
     "commonName": "Indiana Bat"
   },
@@ -523,7 +523,7 @@
     "id": "22711063",
     "name": "Mimus trifasciatus",
     "status": "EN",
-    "group": "AVES",
+    "class": "AVES",
     "code": "EC",
     "commonName": "Floreana Mockingbird"
   },
@@ -531,7 +531,7 @@
     "id": "42107",
     "name": "Microcycas calocoma",
     "status": "CR",
-    "group": "CYCADOPSIDA",
+    "class": "CYCADOPSIDA",
     "code": "CU",
     "commonName": "Cork Palm"
   },
@@ -539,7 +539,7 @@
     "id": "19672693",
     "name": "Ixalidium transiens",
     "status": "VU",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "TZ",
     "commonName": "Usambara Drumming Grasshopper"
   },
@@ -547,7 +547,7 @@
     "id": "187435",
     "name": "Halichoeres socialis",
     "status": "EN",
-    "group": "ACTINOPTERYGII",
+    "class": "ACTINOPTERYGII",
     "code": "BZ",
     "commonName": "Social Wrasse"
   },
@@ -555,7 +555,7 @@
     "id": "4967",
     "name": "Glyptemys muhlenbergii",
     "status": "CR",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "US",
     "commonName": "Bog Turtle"
   },
@@ -563,7 +563,7 @@
     "id": "22721839",
     "name": "Geothlypis beldingi",
     "status": "VU",
-    "group": "AVES",
+    "class": "AVES",
     "code": "MX",
     "commonName": "Belding's Yellowthroat"
   },
@@ -571,7 +571,7 @@
     "id": "43995",
     "name": "Erioderma pedicellatum",
     "status": "CR",
-    "group": "LECANOROMYCETES",
+    "class": "LECANOROMYCETES",
     "code": "CA",
     "commonName": "Boreal Felt Lichen"
   },
@@ -579,7 +579,7 @@
     "id": "7866",
     "name": "Epioblasma capsaeformis",
     "status": "EN",
-    "group": "BIVALVIA",
+    "class": "BIVALVIA",
     "code": "US",
     "commonName": "Oyster Mussel"
   },
@@ -587,7 +587,7 @@
     "id": "41889",
     "name": "Encephalartos hirsutus",
     "status": "CR",
-    "group": "CYCADOPSIDA",
+    "class": "CYCADOPSIDA",
     "code": "ZA",
     "commonName": "Venda Cycad"
   },
@@ -595,7 +595,7 @@
     "id": "158613",
     "name": "Ecnomiohyla rabborum",
     "status": "CR",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "PA",
     "commonName": "Ecnomiohyla rabborum"
   },
@@ -603,7 +603,7 @@
     "id": "6852",
     "name": "Dryococelus australis",
     "status": "CR",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "AU",
     "commonName": "Lord Howe Island Stick-insect"
   },
@@ -611,7 +611,7 @@
     "id": "6306",
     "name": "Deinacrida rugosa",
     "status": "VU",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "NZ",
     "commonName": "Stephens Island Weta"
   },
@@ -619,7 +619,7 @@
     "id": "5957",
     "name": "Cuora yunnanensis",
     "status": "CR",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "CN",
     "commonName": "Yunnan Box Turtle"
   },
@@ -627,7 +627,7 @@
     "id": "5760",
     "name": "Cryptoprocta ferox",
     "status": "VU",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "MG",
     "commonName": "Fossa"
   },
@@ -635,7 +635,7 @@
     "id": "30366",
     "name": "Cryosophila williamsii",
     "status": "EW",
-    "group": "LILIOPSIDA",
+    "class": "LILIOPSIDA",
     "code": "HN",
     "commonName": "Root-spine Palm"
   },
@@ -643,7 +643,7 @@
     "id": "22728472",
     "name": "Centrocercus minimus",
     "status": "EN",
-    "group": "AVES",
+    "class": "AVES",
     "code": "US",
     "commonName": "Gunnison Grouse"
   },
@@ -651,7 +651,7 @@
     "id": "3989",
     "name": "Casarea dussumieri",
     "status": "EN",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "MU",
     "commonName": "Keel-scaled Boa"
   },
@@ -659,7 +659,7 @@
     "id": "22689809",
     "name": "Antrostomus noctitherus",
     "status": "EN",
-    "group": "AVES",
+    "class": "AVES",
     "code": "PR",
     "commonName": "Puerto Rican Nightjar"
   },
@@ -667,7 +667,7 @@
     "id": "61618",
     "name": "Calendula maritima",
     "status": "CR",
-    "group": "MAGNOLIOPSIDA",
+    "class": "MAGNOLIOPSIDA",
     "code": "IT",
     "commonName": "Sea Marigold"
   },
@@ -675,7 +675,7 @@
     "id": "3083",
     "name": "Brookesia perarmata",
     "status": "EN",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "MG",
     "commonName": "Antsingy Leaf Chameleon"
   },
@@ -683,7 +683,7 @@
     "id": "135295",
     "name": "Bombus franklini",
     "status": "CR",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "US",
     "commonName": "Franklin's Bumble Bee"
   },
@@ -691,7 +691,7 @@
     "id": "6234",
     "name": "Beatragus hunteri",
     "status": "CR",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "KE",
     "commonName": "Hirola"
   },
@@ -699,7 +699,7 @@
     "id": "10952",
     "name": "Batagur trivittata",
     "status": "EN",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "MM",
     "commonName": "Burmese Roofed Turtle"
   },
@@ -707,7 +707,7 @@
     "id": "54444",
     "name": "Barbourula kalimantanensis",
     "status": "EN",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "ID",
     "commonName": "Bornean Flat-headed Frog"
   },
@@ -715,7 +715,7 @@
     "id": "57703",
     "name": "Balebreviceps hillmani",
     "status": "CR",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "ET",
     "commonName": "Bale Mountains Treefrog"
   },
@@ -723,7 +723,7 @@
     "id": "60286",
     "name": "Azuragrion granti",
     "status": "NT",
-    "group": "INSECTA",
+    "class": "INSECTA",
     "code": "YE",
     "commonName": "Socotra Bluet"
   },
@@ -731,7 +731,7 @@
     "id": "22680380",
     "name": "Aythya innotata",
     "status": "CR",
-    "group": "AVES",
+    "class": "AVES",
     "code": "MG",
     "commonName": "Madagascar Pochard"
   },
@@ -739,7 +739,7 @@
     "id": "9016",
     "name": "Astrochelys yniphora",
     "status": "CR",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "MG",
     "commonName": "Ploughshare Tortoise"
   },
@@ -747,7 +747,7 @@
     "id": "16559",
     "name": "Pentalagus furnessi",
     "status": "EN",
-    "group": "MAMMALIA",
+    "class": "MAMMALIA",
     "code": "JP",
     "commonName": "Amami Rabbit"
   },
@@ -755,7 +755,7 @@
     "id": "56765",
     "name": "Craugastor milesi",
     "status": "CR",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "HN",
     "commonName": "Miles' Robber Frog"
   },
@@ -763,7 +763,7 @@
     "id": "63563",
     "name": "Poecilotheria metallica",
     "status": "CR",
-    "group": "ARACHNIDA",
+    "class": "ARACHNIDA",
     "code": "IN",
     "commonName": "Peacock Tarantula"
   },
@@ -771,7 +771,7 @@
     "id": "55219",
     "name": "Ameerega cainarachi",
     "status": "VU",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "PE",
     "commonName": "Cainarachi Poison Frog"
   },
@@ -779,7 +779,7 @@
     "id": "22717428",
     "name": "Alauda razae",
     "status": "CR",
-    "group": "AVES",
+    "class": "AVES",
     "code": "CV",
     "commonName": "Raso Lark"
   },
@@ -787,7 +787,7 @@
     "id": "867",
     "name": "Alligator sinensis",
     "status": "CR",
-    "group": "REPTILIA",
+    "class": "REPTILIA",
     "code": "CN",
     "commonName": "Chinese Alligator"
   },
@@ -795,7 +795,7 @@
     "id": "1095",
     "name": "Ambystoma mexicanum",
     "status": "CR",
-    "group": "AMPHIBIA",
+    "class": "AMPHIBIA",
     "code": "MX",
     "commonName": "Axolotl"
   }
