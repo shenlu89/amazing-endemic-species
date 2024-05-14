@@ -79,7 +79,7 @@ export default function NotFound() {
                   target="_blank"
                   className="font-bold text-lg hover:text-red-600"
                 >
-                  {species.common_name}
+                  {species.commonName}
                 </Link>
                 <Link
                   href={IUCN_RED_LIST_URI + species.name.replace(/\s/g, "%20")}
