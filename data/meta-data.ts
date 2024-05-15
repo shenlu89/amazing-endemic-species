@@ -13,6 +13,29 @@ const headerNavLinks = [
   },
 ];
 
+const apiPage = {
+  metadata: {
+    title: "API",
+    description:
+      "The data in the Amazing Endemic Species API is compiled and released based on information from the IUCN Red List API.",
+  },
+  apis: [
+    "random",
+    "species",
+    "speciescount",
+    "country",
+    "countrycount",
+    "version",
+  ],
+};
+
+const aboutPage = {
+  metadata: {
+    title: "About",
+    description: "All the information about Amazing Endemic Species.",
+  },
+};
+
 const homePage = {
   image: "/logo.svg",
   title: "Amazing Endemic Species",
@@ -50,4 +73,4 @@ const homePage = {
   },
 };
 
-export { headerNavLinks, homePage };
+export { headerNavLinks, homePage, apiPage, aboutPage };
