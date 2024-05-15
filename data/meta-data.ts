@@ -15,7 +15,7 @@ const headerNavLinks = [
 
 const apiPage = {
   metadata: {
-    title: "API",
+    title: "API Reference",
     description:
       "The data in the Amazing Endemic Species API is compiled and released based on information from the IUCN Red List API.",
   },
