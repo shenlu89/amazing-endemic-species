@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Amazing Endemic Species
 
-## Getting Started
+Amazing Endemic Species (AES) is an open source, communtiy-driven SaaS (Species-as-a-Service) application.
 
-First, run the development server:
+## Contributing
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+New contributors welcome! First off, thanks for your interest in contributing! 🎉
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Contributing Guidelines
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you experience bugs, feel free to open an [issue](https://github.com/shenlu89/amazing-endemic-species/issues/new). And if you would like to implement a new feature or bug fix, you can raise a pull request with the steps below.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Fork the repository and clone it to your local machine.
+2. Make the necessary changes to the data or code.
+3. Once you've made the changes, create a pull request with a clear description of the modifications you've made.
 
-## Learn More
+For more details, see [Best Practice for Pull Requests on GitHub](https://www.shenlu.me/blog/best-practice-for-pull-requests-on-github)
 
-To learn more about Next.js, take a look at the following resources:
+### Add More Species
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you want to add more species to Amazing Endemic Species, you can follow the contributing guidelines or open a [new discussion](https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ONLY Accept `JPG` images with `150x150` px.
+- Ensure your photo features one species with good quality and easily identifiable
 
-## Deploy on Vercel
+If you experience bugs, feel free to open an [issue](). If you would like to implement a new feature or bug fix, please follow the steps outlined in the [contribution guide](#contributing-guidelines).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Give a ⭐️ if this project helped you!
+
+Share this site with your social network if you like it.
+
+[Tell me](https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=show-and-tell) if you've made something cool by using [Amazing Endemic Species API]().
+
+## Donate
+
+All the information about species is from the IUCN Red List website. To make the IUCN Red List a more complete Barometer of Life. Donate via this link: https://www.iucnredlist.org/support/donate.
+
+If you want to sponsor the author, please via: https://github.com/sponsors/shenlu89.
+
+## License
+
+This repository is licensed under [MIT](/LICENSE), and the content of all images and species data is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
