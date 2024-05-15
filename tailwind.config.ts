@@ -31,8 +31,8 @@ const config: Config = {
               marginTop: 0,
             },
             hr: {
-              marginTop: "2rem",
-              marginBottom: "2rem",
+              marginTop: "1.5rem",
+              marginBottom: "1.5rem",
             },
             p: {
               color: theme("colors.slate.800"),
