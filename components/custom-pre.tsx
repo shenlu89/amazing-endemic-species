@@ -54,7 +54,7 @@ const CustomPre = ({ children, ...props }: any): ReactElement => {
   const IconToUse = isCopied ? LuCheck : LuCopy;
 
   return (
-    <pre className="relative m-0 bg-red-100 text-red-600" {...props}>
+    <pre className="relative m-0 bg-red-100 text-red-600 mb-4" {...props}>
       <button onClick={handleClick} tabIndex={0} {...props}>
         <IconToUse
           className={`absolute top-2 right-2 w-8 h-8 float-right border rounded p-1 block ${
@@ -64,7 +64,7 @@ const CustomPre = ({ children, ...props }: any): ReactElement => {
           }`}
         />
       </button>
-      {children}
+      <span>{children}</span>
     </pre>
   );
 };
