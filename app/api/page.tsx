@@ -33,7 +33,7 @@ export default function API() {
       <h2 id="random">Random</h2>
       <p>To get a species randomly:</p>
       <CustomPre>/api/v1/random</CustomPre>
-      <Link href="/api/v1/version" target="_blank">
+      <Link href="/api/v1/random" target="_blank">
         Example: Random species
       </Link>
       <hr />
