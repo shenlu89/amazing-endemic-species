@@ -48,11 +48,6 @@ const config: Config = {
             ul: {
               marginTop: 0,
             },
-            // pre: {
-            //   backgroundColor: theme("colors.red.100"),
-            //   marginTop: 0,
-            //   color: theme("colors.red.600"),
-            // },
           },
         },
       }),
