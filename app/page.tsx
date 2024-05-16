@@ -17,7 +17,7 @@ import {
   WORLD_110M,
 } from "@/lib/constant";
 import Link from "next/link";
-import Metrics from "@/components/metrics";
+import Insights from "@/components/insights";
 
 export default function Home() {
   const [isMounted, setMounted] = useState(false);
@@ -203,7 +203,7 @@ export default function Home() {
           )
         )}
       </h2>
-      {process.env.NODE_ENV === "production" && <Metrics />}
+      {process.env.NODE_ENV === "production" && <Insights />}
       <div className="flex flex-col justify-center items-center space-y-2 fixed md:mt-24 mt-[6.5rem]">
         <div className="relative">
           <Link
