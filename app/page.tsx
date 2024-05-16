@@ -203,7 +203,7 @@ export default function Home() {
           )
         )}
       </h2>
-      <Metrics />
+      {process.env.NODE_ENV === "production" && <Metrics />}
       <div className="flex flex-col justify-center items-center space-y-2 fixed md:mt-24 mt-[6.5rem]">
         <div className="relative">
           <Link
