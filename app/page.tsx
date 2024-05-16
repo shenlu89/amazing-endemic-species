@@ -261,12 +261,10 @@ export default function Home() {
         )}
       </div>
       <svg
-        className="fixed earth"
+        className="fixed earth md:w-[540px] w-96"
         preserveAspectRatio="xMidYMin meet"
         viewBox={`0 0 ${width} ${height}`}
         ref={svgRef}
-        width={width}
-        height={height}
       ></svg>
     </div>
   );
