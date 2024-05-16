@@ -43,7 +43,7 @@ const Header: NextPage = () => {
         <AddMoreSpecies />
         {/* <ShareButton /> */}
         <div className="hidden md:flex h-full border-y-transparent border-l-transparent border border-r-slate-200"></div>
-        <div className="flex text-sm items-center md:justify-start space-x-2 justify-between w-full md:w-auto md:bg-transparent bg-white">
+        <div className="flex text-sm items-center md:justify-start space-x-2 justify-between px-4 w-full md:w-auto md:bg-transparent bg-white">
           {headerNavLinks?.map((nav) => (
             <Link
               className={`py-2 px-3 rounded md:rounded-full ${
