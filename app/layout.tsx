@@ -13,6 +13,14 @@ export const metadata: Metadata = homePage.metadata;
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/api/v1"
+          as="fetch"
+          crossOrigin="anonymous"
+        ></link>
+      </head>
       <body
         suppressHydrationWarning={true}
         className={`${localFont.className} flex flex-col h-screen bg-slate-50`}
