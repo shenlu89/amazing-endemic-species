@@ -6,8 +6,8 @@ import { useDebouncedCallback } from "use-debounce";
 import fetcher from "@/lib/fetcher";
 import useSWR, { useSWRConfig } from "swr";
 import { random } from "@/lib/utils";
-import Image from "next/image";
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
+
 import {
   COUNTRY_NAME,
   CONSERVATION_STATUS,
@@ -18,21 +18,28 @@ import {
 } from "@/lib/constant";
 import Link from "next/link";
 import Insights from "@/components/insights";
+import AmazingSpecies from "@/data/amazing-species.json";
+
+const randomSpecies =
+  AmazingSpecies[Math.floor(AmazingSpecies.length * Math.random())];
 
 export default function Home() {
-  const [isMounted, setMounted] = useState(false);
-  const [species, setSpecies] = useState({
-    image: "",
-    name: "",
-    status: "",
-    code: "",
-    commonName: "",
-  });
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [species, setSpecies] = useState([
+    {
+      image: "",
+      name: "",
+      status: "",
+      code: "",
+      commonName: "",
+    },
+    {
+      image: `${typeof location !== "undefined" && location.origin}/images/${
+        randomSpecies.id
+      }.jpg`,
+      ...randomSpecies,
+    },
+  ]);
 
-  const handleImageLoad = () => {
-    setIsLoaded(true);
-  };
   const svgRef = useRef<any>(null);
   const width = 540;
   const height = 540;
@@ -50,7 +57,7 @@ export default function Home() {
 
   const titeRef = useRef<any>(null);
 
-  const handleAnimationEnd = useDebouncedCallback(() => {
+  const handleAnimationEnd = useDebouncedCallback(async () => {
     if (titeRef.current) {
       titeRef.current.textContent =
         "Mapping amazing endemic species all over the world";
@@ -77,11 +84,14 @@ export default function Home() {
     .rotate([0, 0, 23.44]);
   const path = geoPath().projection(projection);
 
+  let sp = species;
+
   useEffect(() => {
-    if (!data || isLoading || _loading) return;
+    if (!data || _loading) return;
 
     const { features: countries }: any = feature(data, data.objects.countries);
     const earth = select(svgRef.current);
+
     earth
       .selectAll()
       .data(countries)
@@ -120,7 +130,7 @@ export default function Home() {
       .on("end", step);
 
     function step() {
-      const index = indexOfCountries(_species, countries);
+      const index = indexOfCountries(sp[1], countries);
 
       earth
         .selectAll(".front")
@@ -130,8 +140,9 @@ export default function Home() {
       earth
         .transition()
         .call(async () => {
-          setSpecies(_species);
-          setIsLoaded(false);
+          console.log(sp);
+          setSpecies([...sp.slice(1, 2), _species]);
+          sp = [...sp.slice(1, 2), _species];
           _species = await mutate("/api/v1/random");
         })
         .delay(100)
@@ -154,13 +165,12 @@ export default function Home() {
         .delay(3500)
         .on("end", step);
     }
-    setMounted(true);
     return () => {
       earth.interrupt();
     };
-  }, [data, error, isLoading, _loading, mutate]);
+  }, [data, error, _loading, mutate]);
   if (error) return <div>Fail to load!</div>;
-  if (isLoading && !isMounted)
+  if (isLoading)
     return (
       <div className="relative h-full">
         <div className="loading">
@@ -207,53 +217,58 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center space-y-2 fixed md:mt-24 mt-[6.5rem]">
         <div className="relative">
           <Link
-            href={WIKI_URI + species.name.replace(/\s/g, "_")}
+            href={WIKI_URI + species[0].name.replace(/\s/g, "_")}
             target="_blank"
           >
-            <Image
-              src={species.image}
+            <img
+              src={species[0].image}
               width={130}
               height={130}
               alt=""
               className={`rounded-full shadow ${
-                species.image || "opacity-0"
-              }  ${isLoaded || "blur-sm"}`}
-              onLoad={handleImageLoad}
-              priority
+                species[0].image || "opacity-0"
+              }  `}
             />
           </Link>
+          <img
+            src={species[1].image}
+            width={130}
+            height={130}
+            alt=""
+            className="opacity-0 absolute"
+          />
           {!_loading && (
             <Link
-              href={WIKI_URI + CONSERVATION_STATUS.get(species.status)}
+              href={WIKI_URI + CONSERVATION_STATUS.get(species[0].status)}
               target="_blank"
-              className={`flex absolute top-0 right-0 text-sm items-center ${species.status} justify-center rounded-full w-8 h-8 font-bold`}
+              className={`flex absolute top-0 right-0 text-sm items-center ${species[0].status} justify-center rounded-full w-8 h-8 font-bold`}
             >
-              {species.status}
+              {species[0].status}
             </Link>
           )}
         </div>
-        {!_loading || !species.name ? (
+        {!_loading || !species[0].name ? (
           <div className="flex flex-col items-center space-y-1">
             <Link
-              href={IUCN_RED_LIST_URI + species.name.replace(/\s/g, "%20")}
+              href={IUCN_RED_LIST_URI + species[0].name.replace(/\s/g, "%20")}
               target="_blank"
               className="font-bold text-lg hover:text-red-600"
             >
-              {species.commonName}
+              {species[0].commonName}
             </Link>
             <Link
-              href={IUCN_RED_LIST_URI + species.name.replace(/\s/g, "%20")}
+              href={IUCN_RED_LIST_URI + species[0].name.replace(/\s/g, "%20")}
               target="_blank"
               className="hover:text-red-600"
             >
-              {species.name}
+              {species[0].name}
             </Link>
             <Link
-              href={WIKI_URI + COUNTRY_NAME.get(species.code)}
+              href={WIKI_URI + COUNTRY_NAME.get(species[0].code)}
               target="_blank"
               className="hover:text-red-600"
-            >{`${species.code && getUnicodeFlagIcon(species.code)} ${
-              species.code && COUNTRY_NAME.get(species.code)
+            >{`${species[0].code && getUnicodeFlagIcon(species[0].code)} ${
+              species[0].code && COUNTRY_NAME.get(species[0].code)
             }`}</Link>
           </div>
         ) : (
