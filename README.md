@@ -1,6 +1,9 @@
 # Amazing Endemic Species
 
-Amazing Endemic Species (AES) is an open source, communtiy-driven SaaS (Species-as-a-Service) application.
+Amazing Endemic Species (AES) is an open source, communtiy-driven SaaS (Species-as-a-Service) application. AES has:
+
+- Map endemic species all over the world in 3D dynamic globe.
+- Provide user-friendly API services getting access to ASE data, which can be used in scientific research and secondary development.
 
 ## Contributing
 
@@ -23,8 +26,6 @@ If you want to add more species to Amazing Endemic Species, you can follow the c
 - **ONLY** accept `JPG` images with `150x150` px.
 - Ensure your photo features one species with good quality and easily identifiable
 
-If you experience bugs, feel free to open an [issue](). If you would like to implement a new feature or bug fix, please follow the steps outlined in the [contribution guide](#contributing-guidelines).
-
 ## Support
 
 Give a ⭐️ if this project helped you!
@@ -37,7 +38,7 @@ Share this site with your social network if you like it.
 
 All the information about species is from the IUCN Red List website. To make the IUCN Red List a more complete Barometer of Life. Donate via this link: https://www.iucnredlist.org/support/donate.
 
-If you want to sponsor the author, please via: https://github.com/sponsors/shenlu89.
+If you want to sponsor the author, please via this link: https://github.com/sponsors/shenlu89.
 
 ## License
 
