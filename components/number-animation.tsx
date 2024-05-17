@@ -1,3 +1,4 @@
+import { formatNumber } from "@/lib/utils";
 import { useState, useEffect } from "react";
 
 export default function NumberAnimation({ count, className }: any) {
@@ -19,5 +20,5 @@ export default function NumberAnimation({ count, className }: any) {
     return () => cancelAnimationFrame(start);
   }, []);
 
-  return <div className={className}>{number.toLocaleString()}</div>;
+  return <div className={className}>{formatNumber(number)}</div>;
 }
