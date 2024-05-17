@@ -12,6 +12,13 @@ export default function About() {
         Amazing Endemic Species (AES) is an open source, communtiy-driven SaaS
         (Species-as-a-Service) application.
       </p>
+      <ul>
+        <li>Map endemic species all over the world in 3D dynamic globe.</li>
+        <li>
+          Provide user-friendly API services getting access to ASE data, which
+          can be used in scientific research and secondary development.
+        </li>
+      </ul>
       <h2 id="contributing">Contributing</h2>
       <p>
         New contributors welcome! First off, thanks for your interest in
