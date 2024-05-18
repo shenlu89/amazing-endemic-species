@@ -30,7 +30,7 @@ If you want to add more species to Amazing Endemic Species, you can follow the c
 
 Give a ⭐️ if this project helped you!
 
-Share this site with your social network if you like it.
+Share this [site](https://aes.shenlu.me) with your social network if you like it.
 
 [Tell me](https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=show-and-tell) if you've made something cool by using [Amazing Endemic Species API]().
 
