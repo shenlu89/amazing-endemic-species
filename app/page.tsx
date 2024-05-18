@@ -145,7 +145,6 @@ export default function Home() {
           sp = [...sp.slice(1, 2), _species];
           _species = await mutate("/api/v1/random");
         })
-        .delay(100)
         .duration(1000)
         .tween("rotate", () => {
           const point = geoCentroid(countries[index[0]]);
