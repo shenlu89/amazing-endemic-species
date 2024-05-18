@@ -9,13 +9,13 @@ export default function About() {
     <article className="flex flex-col max-w-screen-md container mx-auto justify-center relative prose">
       <h1 id="about">About</h1>
       <p>
-        Amazing Endemic Species (AES) is an open source, communtiy-driven SaaS
-        (Species-as-a-Service) application.
+        Amazing Endemic Species (AES) is an open-source, community-driven SaaS
+        (Species-as-a-Service) application. AES has:
       </p>
       <ul>
-        <li>Map endemic species all over the world in 3D dynamic globe.</li>
+        <li>Map endemic species all over the world in a 3D dynamic globe.</li>
         <li>
-          Provide user-friendly API services getting access to ASE data, which
+          Provide user-friendly API services to get access to ASE data, which
           can be used in scientific research and secondary development.
         </li>
       </ul>
@@ -94,8 +94,8 @@ export default function About() {
         .
       </p>
       <p>
-        If you want to keep AES alive and develop more features in the future,
-        please sponsor it via these link:{" "}
+        If you want to help me keep https://aes.shenlu.me alive, please support
+        me via these link: :{" "}
         <ul>
           <li>
             <strong>Buy Me a Coffee</strong>:{" "}
