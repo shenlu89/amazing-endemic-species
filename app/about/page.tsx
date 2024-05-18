@@ -37,8 +37,8 @@ export default function About() {
         <li>Fork the repository and clone it to your local machine.</li>
         <li>Make the necessary changes to the data or code.</li>
         <li>
-          Once you've made the changes, create a pull request with a clear
-          description of the modifications you've made.
+          Create a pull request with a clear description of the modifications
+          you've made.
         </li>
       </ol>
       <p>
@@ -94,11 +94,22 @@ export default function About() {
         .
       </p>
       <p>
-        If you want to sponsor the author, please via:{" "}
-        <Link href="https://github.com/sponsors/shenlu89">
-          https://github.com/sponsors/shenlu89
-        </Link>
-        .
+        If you want to keep AES alive and develop more features in the future,
+        please sponsor it via these link:{" "}
+        <ul>
+          <li>
+            <strong>Buy Me a Coffee</strong>:{" "}
+            <Link href="https://buymeacoffee.com/shenlu89">
+              https://buymeacoffee.com/shenlu89
+            </Link>
+          </li>
+          <li>
+            <strong>Github Sponsors</strong>:{" "}
+            <Link href="https://github.com/sponsors/shenlu89">
+              https://github.com/sponsors/shenlu89
+            </Link>
+          </li>
+        </ul>
       </p>
       <h2>Contact</h2>
       <p>

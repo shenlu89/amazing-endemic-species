@@ -15,7 +15,7 @@ If you experience bugs, feel free to open an [issue](https://github.com/shenlu89
 
 1. Fork the repository and clone it to your local machine.
 2. Make the necessary changes to the data or code.
-3. Once you've made the changes, create a pull request with a clear description of the modifications you've made.
+3. Create a pull request with a clear description of the modifications you've made.
 
 For more details, see [Best Practice for Pull Requests on GitHub](https://www.shenlu.me/blog/best-practice-for-pull-requests-on-github)
 
@@ -38,7 +38,10 @@ Share this [site](https://aes.shenlu.me) with your social network if you like it
 
 All the information about species is from the IUCN Red List website. To make the IUCN Red List a more complete Barometer of Life. Donate via this link: https://www.iucnredlist.org/support/donate.
 
-If you want to sponsor the author, please via this link: https://github.com/sponsors/shenlu89.
+If you want to keep AES alive and develop more features in the future, please sponsor it via these link:
+
+- **Buy Me a Coffee**: https://buymeacoffee.com/shenlu89
+- **Github Sponsors**: https://github.com/sponsors/shenlu89
 
 ## License
 
