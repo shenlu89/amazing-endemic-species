@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/custom-link";
 import useSWR from "swr";
 import fetcher from "@/lib/fetcher";
 import {
@@ -51,10 +51,7 @@ export default function NotFound() {
         {!isLoading ? (
           <>
             <div className="relative">
-              <Link
-                href={WIKI_URI + species?.name?.replace(/\s/g, "_")}
-                target="_blank"
-              >
+              <Link href={WIKI_URI + species?.name?.replace(/\s/g, "_")}>
                 <Image
                   src={species.image}
                   width={120}
@@ -66,7 +63,6 @@ export default function NotFound() {
               </Link>
               <Link
                 href={WIKI_URI + CONSERVATION_STATUS.get(species.status)}
-                target="_blank"
                 className={`flex absolute top-0 right-0 text-sm items-center ${species.status} justify-center rounded-full w-8 h-8 font-bold`}
               >
                 {species.status}
@@ -76,7 +72,6 @@ export default function NotFound() {
               <div className="flex flex-col items-center mt-2 space-y-1">
                 <Link
                   href={IUCN_RED_LIST_URI + species.name.replace(/\s/g, "%20")}
-                  target="_blank"
                   className="font-bold text-lg hover:text-red-600"
                 >
                   {species.commonName}
@@ -90,7 +85,6 @@ export default function NotFound() {
                 </Link>
                 <Link
                   href={WIKI_URI + COUNTRY_NAME.get(species.code)}
-                  target="_blank"
                   className="hover:text-red-600"
                 >{`${species.code && getUnicodeFlagIcon(species.code)} ${
                   species.code && COUNTRY_NAME.get(species.code)

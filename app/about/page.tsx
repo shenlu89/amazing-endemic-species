@@ -1,6 +1,6 @@
 import { aboutPage } from "@/data/meta-data";
 import { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/custom-link";
 
 export const metadata: Metadata = aboutPage.metadata;
 
@@ -27,10 +27,7 @@ export default function About() {
       <h3 id="contributing-guidelines">Contributing Guidelines</h3>
       <p>
         If you experience bugs, feel free to open an{" "}
-        <Link
-          href="https://github.com/shenlu89/amazing-endemic-species/issues/new"
-          target="_blank"
-        >
+        <Link href="https://github.com/shenlu89/amazing-endemic-species/issues/new">
           issue
         </Link>
         . And if you would like to implement a new feature or bug fix, you can
@@ -46,10 +43,7 @@ export default function About() {
       </ol>
       <p>
         For more details, see{" "}
-        <Link
-          href="https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general"
-          target="_blank"
-        >
+        <Link href="https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general">
           Best Practice for Pull Requests on GitHub
         </Link>
         .
@@ -60,10 +54,7 @@ export default function About() {
         follow the{" "}
         <Link href="#contributing-guidelines">contributing guidelines</Link> or
         open a{" "}
-        <Link
-          href="https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general"
-          target="_blank"
-        >
+        <Link href="https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general">
           new discussion
         </Link>
         .
@@ -80,12 +71,12 @@ export default function About() {
       </ul>
       <h2>Support</h2>
       <p>Give a ⭐️ if this project helped you!</p>
-      <p>Share this site with your social network if you like it.</p>
       <p>
-        <Link
-          href="https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=show-and-tell"
-          target="_blank"
-        >
+        Share this <Link href="https://aes.shenlu.me">site</Link> with your
+        social network if you like it.
+      </p>
+      <p>
+        <Link href="https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=show-and-tell">
           Tell me
         </Link>{" "}
         if you've made something cool by using{" "}
@@ -94,19 +85,17 @@ export default function About() {
       <h2>Donate</h2>
       <p>
         All the information about species is from the{" "}
-        <Link href="https://www.iucnredlist.org/" target="_blank">
-          IUCN Red List website
-        </Link>
-        . To make the IUCN Red List a more complete Barometer of Life. Donate
-        via this link:{" "}
-        <Link href="https://www.iucnredlist.org/support/donate" target="_blank">
+        <Link href="https://www.iucnredlist.org/">IUCN Red List website</Link>.
+        To make the IUCN Red List a more complete Barometer of Life. Donate via
+        this link:{" "}
+        <Link href="https://www.iucnredlist.org/support/donate">
           https://www.iucnredlist.org/support/donate
         </Link>
         .
       </p>
       <p>
         If you want to sponsor the author, please via:{" "}
-        <Link href="https://github.com/sponsors/shenlu89" target="_blank">
+        <Link href="https://github.com/sponsors/shenlu89">
           https://github.com/sponsors/shenlu89
         </Link>
         .

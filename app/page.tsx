@@ -16,7 +16,7 @@ import {
   ISO_MAP,
   WORLD_110M,
 } from "@/lib/constant";
-import Link from "next/link";
+import Link from "@/components/custom-link";
 import Insights from "@/components/insights";
 import AmazingSpecies from "@/data/amazing-species.json";
 
@@ -215,15 +215,12 @@ export default function Home() {
       {process.env.NODE_ENV === "production" && <Insights />}
       <div className="flex flex-col justify-center items-center space-y-2 fixed md:mt-24 mt-[6.5rem]">
         <div className="relative">
-          <Link
-            href={WIKI_URI + species[0].name.replace(/\s/g, "_")}
-            target="_blank"
-          >
+          <Link href={WIKI_URI + species[0].name.replace(/\s/g, "_")}>
             <img
               src={species[0].image}
               width={130}
               height={130}
-              alt=""
+              alt={species[0].name}
               className={`rounded-full shadow ${
                 species[0].image || "opacity-0"
               }  `}
@@ -239,7 +236,6 @@ export default function Home() {
           {!_loading && (
             <Link
               href={WIKI_URI + CONSERVATION_STATUS.get(species[0].status)}
-              target="_blank"
               className={`flex absolute top-0 right-0 text-sm items-center ${species[0].status} justify-center rounded-full w-8 h-8 font-bold`}
             >
               {species[0].status}
@@ -250,21 +246,18 @@ export default function Home() {
           <div className="flex flex-col items-center space-y-1">
             <Link
               href={IUCN_RED_LIST_URI + species[0].name.replace(/\s/g, "%20")}
-              target="_blank"
               className="font-bold text-lg hover:text-red-600"
             >
               {species[0].commonName}
             </Link>
             <Link
               href={IUCN_RED_LIST_URI + species[0].name.replace(/\s/g, "%20")}
-              target="_blank"
               className="hover:text-red-600"
             >
               {species[0].name}
             </Link>
             <Link
               href={WIKI_URI + COUNTRY_NAME.get(species[0].code)}
-              target="_blank"
               className="hover:text-red-600"
             >{`${species[0].code && getUnicodeFlagIcon(species[0].code)} ${
               species[0].code && COUNTRY_NAME.get(species[0].code)
