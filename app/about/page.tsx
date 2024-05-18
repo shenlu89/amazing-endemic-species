@@ -61,7 +61,7 @@ export default function About() {
       </p>
       <ul>
         <li>
-          <strong>ONLY</strong> Accept <code>JPG</code> images with{" "}
+          <strong>ONLY</strong> accept <code>JPG</code> images with{" "}
           <code>150x150</code> px.
         </li>
         <li>
