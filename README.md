@@ -21,7 +21,7 @@ For more details, see [Best Practice for Pull Requests on GitHub](https://www.sh
 
 ### Add More Species
 
-If you want to add more species to Amazing Endemic Species, you can follow the contributing guidelines or open a [new discussion](https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general).
+If you want to add more species to Amazing Endemic Species, you can follow the [contributing guidelines](#contributing-guidelines) or open a [new discussion](https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general).
 
 - **ONLY** accept `JPG` images with `150x150` px.
 - Ensure your photo features one species with good quality and easily identifiable
