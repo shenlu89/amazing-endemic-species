@@ -226,13 +226,6 @@ export default function Home() {
               }  `}
             />
           </Link>
-          <img
-            src={species[1].image}
-            width={130}
-            height={130}
-            alt=""
-            className="opacity-0 absolute"
-          />
           {!_loading && (
             <Link
               href={WIKI_URI + CONSERVATION_STATUS.get(species[0].status)}
@@ -267,6 +260,13 @@ export default function Home() {
           <div className="text-lg p-2">Loading...</div>
         )}
       </div>
+      <img
+        src={species[1].image}
+        width={130}
+        height={130}
+        alt=""
+        className="opacity-0 absolute"
+      />
       <svg
         className="fixed earth md:w-[540px] w-96"
         preserveAspectRatio="xMidYMin meet"
