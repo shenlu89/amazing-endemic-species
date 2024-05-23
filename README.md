@@ -1,6 +1,6 @@
 # Amazing Endemic Species
 
-Amazing Endemic Species (AES) is an open source, communtiy-driven SaaS (Species-as-a-Service) application. AES has:
+Amazing Endemic Species (AES) is an open-source, community-driven SaaS (Species-as-a-Service) application. AES has:
 
 - Map endemic species all over the world in a 3D dynamic globe.
 - Provide user-friendly API services to get access to ASE data, which can be used in scientific research and secondary development.
