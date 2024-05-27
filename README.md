@@ -2,8 +2,13 @@
 
 Amazing Endemic Species (AES) is an open-source, community-driven SaaS (Species-as-a-Service) application. AES has:
 
-- Map endemic species all over the world in a 3D dynamic globe.
-- Provide user-friendly API services to get access to ASE data, which can be used in scientific research and secondary development.
+- 🌍 **3D Dynamic Globe**: AES maps endemic species all over the world in a 3D dynamic globe.
+
+- 🦎 **User-Friendly API Services**: AES provides easy-to-use API services, which means you can seamlessly access AES data for your scientific research or any secondary development projects.
+
+- 🔍 **Open-Source and Community-Driven**: Being open-source means transparency and the opportunity for anyone to improve the project. Such as, you can contribute to the database, ensuring that the information is continually updated and accurate.
+
+Join the AES community and help to map and protect the world’s unique species! Whether you’re contributing data, using the API for your research, or simply exploring the globe, every little bit helps.
 
 ## Contributing
 
@@ -40,7 +45,6 @@ All the information about species is from the IUCN Red List website. To make the
 
 If you want to help me keep https://aes.shenlu.me alive, please support me via these link:
 
-- **Buy Me a Coffee**: https://buymeacoffee.com/shenlu89
 - **Github Sponsors**: https://github.com/sponsors/shenlu89
 
 ## License
