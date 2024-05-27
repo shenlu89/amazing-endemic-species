@@ -13,12 +13,28 @@ export default function About() {
         (Species-as-a-Service) application. AES has:
       </p>
       <ul>
-        <li>Map endemic species all over the world in a 3D dynamic globe.</li>
         <li>
-          Provide user-friendly API services to get access to ASE data, which
-          can be used in scientific research and secondary development.
+          🌍 <strong>3D Dynamic Globe</strong>: AES maps endemic species all
+          over the world in a 3D dynamic globe.
+        </li>
+        <li>
+          🦎 <strong>User-Friendly API Services</strong>: AES provides
+          easy-to-use API services, which means you can seamlessly access AES
+          data for your scientific research or any secondary development
+          projects.
+        </li>
+        <li>
+          🔍 <strong>Open-Source and Community-Driven</strong>: Being
+          open-source means transparency and the opportunity for anyone to
+          improve the project. Such as, you can contribute to the database,
+          ensuring that the information is continually updated and accurate.
         </li>
       </ul>
+      <p>
+        Join the AES community and help to map and protect the world’s unique
+        species! Whether you’re contributing data, using the API for your
+        research, or simply exploring the globe, every little bit helps.
+      </p>
       <h2 id="contributing">Contributing</h2>
       <p>
         New contributors welcome! First off, thanks for your interest in
@@ -97,12 +113,6 @@ export default function About() {
         If you want to help me keep https://aes.shenlu.me alive, please support
         me via these link: :{" "}
         <ul>
-          <li>
-            <strong>Buy Me a Coffee</strong>:{" "}
-            <Link href="https://buymeacoffee.com/shenlu89">
-              https://buymeacoffee.com/shenlu89
-            </Link>
-          </li>
           <li>
             <strong>Github Sponsors</strong>:{" "}
             <Link href="https://github.com/sponsors/shenlu89">
