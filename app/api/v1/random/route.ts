@@ -1,13 +1,16 @@
 import { NextResponse } from "next/server";
-import AES from "@/data/aes.json";
+import { db } from "@/db";
+import { sql } from "drizzle-orm";
 
 export async function GET(req: any) {
-  const species = AES[Math.floor(Math.random() * AES.length)];
   try {
+    const [random] = (
+      await db.run(sql`SELECT * FROM aes ORDER BY RANDOM() LIMIT 1`)
+    ).rows;
     return NextResponse.json(
       {
-        image: req.url.replace("api/v1/random", `images/${species.id}.jpg`),
-        ...species,
+        image: req.url.replace("api/v1/random", `images/${random.id}.jpg`),
+        ...random,
       },
       { status: 200 }
     );

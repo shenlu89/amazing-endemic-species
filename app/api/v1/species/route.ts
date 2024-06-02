@@ -1,9 +1,11 @@
 import { NextResponse } from "next/server";
-import AES from "@/data/aes.json";
+import { db } from "@/db";
+import { aes } from "@/db/schema";
 
 export async function GET() {
   try {
-    return NextResponse.json(AES, { status: 200 });
+    const species = await db.select().from(aes).all();
+    return NextResponse.json(species, { status: 200 });
   } catch (e: any) {
     return NextResponse.json({ message: e.message }, { status: 500 });
   }

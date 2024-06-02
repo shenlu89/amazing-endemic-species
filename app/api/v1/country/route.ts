@@ -1,10 +1,16 @@
 import { NextResponse } from "next/server";
-import AES from "@/data/aes.json";
+import { db } from "@/db";
+import { aes } from "@/db/schema";
 
 export async function GET() {
-  const countrySet = new Set(AES.map((item) => item.iso_code));
   try {
-    return NextResponse.json(Array.from(countrySet), { status: 200 });
+    const iso_codes = await db
+      .selectDistinct({ iso_code: aes.iso_code })
+      .from(aes);
+    return NextResponse.json(
+      iso_codes.map((code) => code.iso_code),
+      { status: 200 }
+    );
   } catch (e: any) {
     return NextResponse.json({ message: e.message }, { status: 500 });
   }
