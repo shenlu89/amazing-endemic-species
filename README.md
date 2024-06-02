@@ -14,6 +14,13 @@ Join the AES community and help to map and protect the world’s unique species!
 
 New contributors welcome! First off, thanks for your interest in contributing! 🎉
 
+### Add More Species
+
+If you want to add more species to Amazing Endemic Species, you can follow the [contributing guidelines](#contributing-guidelines) or add species via an [issue](https://github.com/shenlu89/amazing-endemic-species/issues/new?assignees=shenlu89&labels=add-more-species&projects=&template=add_more_species.md&title=%5BAdd+More+Species%5D).
+
+- **ONLY** accept `JPG` images with `150x150` px.
+- Ensure your photo features one species with good quality and easily identifiable
+
 ### Contributing Guidelines
 
 If you experience bugs, feel free to open an [issue](https://github.com/shenlu89/amazing-endemic-species/issues/new). And if you would like to implement a new feature or bug fix, you can raise a pull request with the steps below.
@@ -23,13 +30,6 @@ If you experience bugs, feel free to open an [issue](https://github.com/shenlu89
 3. Create a pull request with a clear description of the modifications you've made.
 
 For more details, see [Best Practice for Pull Requests on GitHub](https://www.shenlu.me/blog/best-practice-for-pull-requests-on-github)
-
-### Add More Species
-
-If you want to add more species to Amazing Endemic Species, you can follow the [contributing guidelines](#contributing-guidelines) or open a [new discussion](https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general).
-
-- **ONLY** accept `JPG` images with `150x150` px.
-- Ensure your photo features one species with good quality and easily identifiable
 
 ## Support
 
@@ -43,9 +43,7 @@ Share this [site](https://aes.shenlu.me) with your social network if you like it
 
 All the information about species is from the IUCN Red List website. To make the IUCN Red List a more complete Barometer of Life. Donate via this link: https://www.iucnredlist.org/support/donate.
 
-If you want to help me keep https://aes.shenlu.me alive, please support me via these link:
-
-- **Github Sponsors**: https://github.com/sponsors/shenlu89
+If you want to help me keep https://aes.shenlu.me alive, please support me via these link: https://github.com/sponsors/shenlu89
 
 ## License
 
