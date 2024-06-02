@@ -5,11 +5,12 @@ import Image from "next/image";
 import Package from "@/package.json";
 import { headerNavLinks } from "@/data/meta-data";
 import { usePathname } from "next/navigation";
-import { LuHome, LuHelpCircle } from "react-icons/lu";
+import { LuHome, LuHelpCircle, LuCompass } from "react-icons/lu";
 import AddMoreSpecies from "@/components/add-more-species";
 import GitHubStars from "@/components/github-stars";
 import { PiPlug, PiPlugDuotone } from "react-icons/pi";
 // import ShareButton from "@/components/share-button";
+import { BsFillPlusCircleFill } from "react-icons/bs";
 
 export const runtime = "edge";
 
@@ -43,15 +44,18 @@ const Header: NextPage = () => {
         <AddMoreSpecies />
         {/* <ShareButton /> */}
         <div className="hidden md:flex h-full border-y-transparent border-l-transparent border border-r-slate-200"></div>
-        <div className="flex text-sm items-center md:justify-start space-x-2 justify-between md:px-0 px-4 w-full md:w-auto md:bg-transparent bg-white">
+        <div className="flex text-sm items-center md:justify-start space-x-2 justify-between md:px-0 w-full md:w-auto md:bg-transparent bg-white">
           {headerNavLinks?.map((nav) => (
             <Link
-              className={`py-2 px-3 rounded md:rounded-full ${
+              className={`py-2 px-3 rounded text-xs md:text-sm md:rounded-full md:w-auto w-1/5 ${
                 pathname?.includes(nav?.name.toLowerCase()) ||
                 (pathname === "/" && nav?.name === "Home")
                   ? "md:bg-red-100 bg-none  text-black"
                   : "md:hover:bg-red-100 text-slate-600 hover:text-red-600"
-              } ${nav?.name === "Home" && "visible md:hidden"}`}
+              } ${
+                (nav?.name === "Home" || nav?.name === "AddMoreSpecies") &&
+                "visible md:hidden"
+              }`}
               key={nav?.name}
               href={nav?.link}
             >
@@ -61,6 +65,23 @@ const Header: NextPage = () => {
                     pathname === "/" &&
                     "fill-slate-300" &&
                     "fill-red-100 stroke-red-600"
+                  }`}
+                />
+              )}
+              {nav?.name === "Explore" && (
+                <LuCompass
+                  className={`w-6 h-6 m-auto visible md:hidden ${
+                    pathname === "/explore" &&
+                    "fill-slate-300" &&
+                    "fill-red-100 stroke-red-600"
+                  }`}
+                />
+              )}
+              {nav?.name === "AddMoreSpecies" && (
+                <BsFillPlusCircleFill
+                  className={`w-8 h-8 m-auto ${
+                    // pathname === "/addmorespecies" &&
+                    "fill-slate-300" && "fill-red-600"
                   }`}
                 />
               )}
@@ -80,16 +101,16 @@ const Header: NextPage = () => {
                 />
               )}
               <span
-                className={`flex md:mt-0 mt-1 ${
+                className={`flex md:mt-0 mt-1 justify-center ${
                   pathname == nav?.link && "text-red-600"
                 }`}
               >
-                {nav?.name}
+                {nav?.name !== "AddMoreSpecies" && nav?.name}
               </span>
             </Link>
           ))}
         </div>
-        <GitHubStars />
+        {/* <GitHubStars /> */}
       </nav>
     </header>
   );
