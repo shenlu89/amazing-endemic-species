@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
-import amazingSpecies from "@/data/amazing-species.json";
+import AES from "@/data/aes.json";
 
 export async function GET() {
-  const countrySet = new Set(amazingSpecies.map((item) => item.code));
+  const countrySet = new Set(AES.map((item) => item.iso_code));
   try {
     return NextResponse.json(Array.from(countrySet), { status: 200 });
   } catch (e: any) {

@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
-import amazingSpecies from "@/data/amazing-species.json";
+import AES from "@/data/aes.json";
 
 export async function GET() {
   try {
     return NextResponse.json(
       {
-        count: amazingSpecies?.length,
+        count: AES?.length,
       },
       { status: 200 }
     );

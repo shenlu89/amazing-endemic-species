@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
-import amazingSpecies from "@/data/amazing-species.json";
+import AES from "@/data/aes.json";
 
 export async function GET(req: any) {
-  const species =
-    amazingSpecies[Math.floor(Math.random() * amazingSpecies.length)];
+  const species = AES[Math.floor(Math.random() * AES.length)];
   try {
     return NextResponse.json(
       {

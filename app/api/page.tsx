@@ -1,7 +1,7 @@
 import Link from "@/components/custom-link";
 import React from "react";
 
-import amazingSpecies from "@/data/amazing-species.json";
+import AES from "@/data/aes.json";
 import { Metadata } from "next";
 import { apiPage } from "@/data/meta-data";
 import CustomPre from "@/components/custom-pre";
@@ -10,15 +10,15 @@ export const metadata: Metadata = apiPage.metadata;
 
 export default function API() {
   return (
-    <article className="flex flex-col max-w-screen-md container mx-auto justify-center relative prose">
+    <article className="flex flex-col max-w-screen-lg container mx-auto justify-center relative prose">
       <h1>API Reference</h1>
       <p>
         {`The data in the Amazing Endemic Species API is compiled and released
         based on information from the IUCN Red List API. It gathers ${
-          amazingSpecies.length
+          AES.length
         }
         endemic species from ${
-          new Set(amazingSpecies.map((item) => item.code)).size
+          new Set(AES.map((item) => item.iso_code)).size
         } different countries and regions until now.`}
       </p>
       <ul>

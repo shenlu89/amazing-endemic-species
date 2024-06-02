@@ -51,7 +51,9 @@ export default function NotFound() {
         {!isLoading ? (
           <>
             <div className="relative">
-              <Link href={WIKI_URI + species?.name?.replace(/\s/g, "_")}>
+              <Link
+                href={WIKI_URI + species?.scientific_name?.replace(/\s/g, "_")}
+              >
                 <Image
                   src={species.image}
                   width={120}
@@ -62,32 +64,41 @@ export default function NotFound() {
                 />
               </Link>
               <Link
-                href={WIKI_URI + CONSERVATION_STATUS.get(species.status)}
+                href={
+                  WIKI_URI +
+                  CONSERVATION_STATUS.get(species.conservation_status)
+                }
                 className={`flex absolute top-0 right-0 text-sm items-center ${species.status} justify-center rounded-full w-8 h-8 font-bold`}
               >
-                {species.status}
+                {species.conservation_status}
               </Link>
             </div>
             <div>
               <div className="flex flex-col items-center mt-2 space-y-1">
                 <Link
-                  href={IUCN_RED_LIST_URI + species.name.replace(/\s/g, "%20")}
+                  href={
+                    IUCN_RED_LIST_URI +
+                    species.scientific_name.replace(/\s/g, "%20")
+                  }
                   className="font-bold text-lg hover:text-red-600"
                 >
-                  {species.commonName}
+                  {species.common_name}
                 </Link>
                 <Link
-                  href={IUCN_RED_LIST_URI + species.name.replace(/\s/g, "%20")}
+                  href={
+                    IUCN_RED_LIST_URI +
+                    species.scientific_name.replace(/\s/g, "%20")
+                  }
                   target="_blank"
                   className="hover:text-red-600"
                 >
-                  {species.name}
+                  {species.scientific_name}
                 </Link>
                 <Link
-                  href={WIKI_URI + COUNTRY_NAME.get(species.code)}
+                  href={WIKI_URI + COUNTRY_NAME.get(species.iso_code)}
                   className="hover:text-red-600"
-                >{`${species.code && getUnicodeFlagIcon(species.code)} ${
-                  species.code && COUNTRY_NAME.get(species.code)
+                >{`${species.code && getUnicodeFlagIcon(species.iso_code)} ${
+                  species.code && COUNTRY_NAME.get(species.iso_code)
                 }`}</Link>
               </div>
             </div>

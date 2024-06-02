@@ -18,19 +18,18 @@ import {
 } from "@/lib/constant";
 import Link from "@/components/custom-link";
 import Insights from "@/components/insights";
-import AmazingSpecies from "@/data/amazing-species.json";
+import AES from "@/data/aes.json";
 
-const randomSpecies =
-  AmazingSpecies[Math.floor(AmazingSpecies.length * Math.random())];
+const randomSpecies = AES[Math.floor(AES.length * Math.random())];
 
 export default function Home() {
   const [species, setSpecies] = useState([
     {
       image: "",
-      name: "",
-      status: "",
-      code: "",
-      commonName: "",
+      scientific_name: "",
+      conservation_status: "",
+      iso_code: "",
+      common_name: "",
     },
     {
       image: `${typeof location !== "undefined" && location.origin}/images/${
@@ -65,7 +64,7 @@ export default function Home() {
   }, 1000);
 
   const indexOfCountries = (specie: any, countries: any) => {
-    const code = ISO_MAP.get(specie.code);
+    const code = ISO_MAP.get(specie.iso_code);
     if (code === 156) {
       return [30, 163];
     }
@@ -215,12 +214,14 @@ export default function Home() {
       {process.env.NODE_ENV === "production" && <Insights />}
       <div className="flex flex-col justify-center items-center space-y-2 fixed md:mt-24 mt-[6.5rem]">
         <div className="relative">
-          <Link href={WIKI_URI + species[0].name.replace(/\s/g, "_")}>
+          <Link
+            href={WIKI_URI + species[0].scientific_name.replace(/\s/g, "_")}
+          >
             <img
               src={species[0].image}
               width={130}
               height={130}
-              alt={species[0].name}
+              alt={species[0].scientific_name}
               className={`rounded-full shadow ${
                 species[0].image || "opacity-0"
               }  `}
@@ -228,32 +229,43 @@ export default function Home() {
           </Link>
           {!_loading && (
             <Link
-              href={WIKI_URI + CONSERVATION_STATUS.get(species[0].status)}
-              className={`flex absolute top-0 right-0 text-sm items-center ${species[0].status} justify-center rounded-full w-8 h-8 font-bold`}
+              href={
+                WIKI_URI +
+                CONSERVATION_STATUS.get(species[0].conservation_status)
+              }
+              className={`flex absolute top-0 right-0 text-sm items-center ${species[0].conservation_status} justify-center rounded-full w-8 h-8 font-bold`}
             >
-              {species[0].status}
+              {species[0].conservation_status}
             </Link>
           )}
         </div>
-        {!_loading || !species[0].name ? (
+        {!_loading || !species[0].scientific_name ? (
           <div className="flex flex-col items-center space-y-1">
             <Link
-              href={IUCN_RED_LIST_URI + species[0].name.replace(/\s/g, "%20")}
+              href={
+                IUCN_RED_LIST_URI +
+                species[0].scientific_name.replace(/\s/g, "%20")
+              }
               className="font-bold text-lg hover:text-red-600"
             >
-              {species[0].commonName}
+              {species[0].scientific_name}
             </Link>
             <Link
-              href={IUCN_RED_LIST_URI + species[0].name.replace(/\s/g, "%20")}
+              href={
+                IUCN_RED_LIST_URI +
+                species[0].scientific_name.replace(/\s/g, "%20")
+              }
               className="hover:text-red-600"
             >
-              {species[0].name}
+              {species[0].scientific_name}
             </Link>
             <Link
-              href={WIKI_URI + COUNTRY_NAME.get(species[0].code)}
+              href={WIKI_URI + COUNTRY_NAME.get(species[0].iso_code)}
               className="hover:text-red-600"
-            >{`${species[0].code && getUnicodeFlagIcon(species[0].code)} ${
-              species[0].code && COUNTRY_NAME.get(species[0].code)
+            >{`${
+              species[0].iso_code && getUnicodeFlagIcon(species[0].iso_code)
+            } ${
+              species[0].iso_code && COUNTRY_NAME.get(species[0].iso_code)
             }`}</Link>
           </div>
         ) : (
