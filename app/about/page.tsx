@@ -40,6 +40,27 @@ export default function About() {
         New contributors welcome! First off, thanks for your interest in
         contributing! 🎉
       </p>
+      <h3>Add More Species</h3>
+      <p>
+        If you want to add more species to Amazing Endemic Species, you can
+        follow the{" "}
+        <Link href="#contributing-guidelines">contributing guidelines</Link> or
+        or submit an{" "}
+        <Link href="https://github.com/shenlu89/amazing-endemic-species/issues/new?assignees=shenlu89&labels=add-more-species&projects=&template=add_more_species.md&title=%5BAdd+More+Species%5D">
+          issue
+        </Link>{" "}
+        labeling <code>add-more-species</code>.
+      </p>
+      <ul>
+        <li>
+          <strong>ONLY</strong> accept <code>JPG</code> images with{" "}
+          <code>150x150</code> px.
+        </li>
+        <li>
+          Ensure your photo features one species with good quality and easily
+          identifiable
+        </li>
+      </ul>
       <h3 id="contributing-guidelines">Contributing Guidelines</h3>
       <p>
         If you experience bugs, feel free to open an{" "}
@@ -64,27 +85,7 @@ export default function About() {
         </Link>
         .
       </p>
-      <h3>Add More Species</h3>
-      <p>
-        If you want to add more species to Amazing Endemic Species, you can
-        follow the{" "}
-        <Link href="#contributing-guidelines">contributing guidelines</Link> or
-        open a{" "}
-        <Link href="https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general">
-          new discussion
-        </Link>
-        .
-      </p>
-      <ul>
-        <li>
-          <strong>ONLY</strong> accept <code>JPG</code> images with{" "}
-          <code>150x150</code> px.
-        </li>
-        <li>
-          Ensure your photo features one species with good quality and easily
-          identifiable
-        </li>
-      </ul>
+
       <h2>Support</h2>
       <p>Give a ⭐️ if this project helped you!</p>
       <p>
@@ -111,7 +112,7 @@ export default function About() {
       </p>
       <p>
         If you want to help me keep https://aes.shenlu.me alive, please support
-        me via these link:{" "}
+        me via link:{" "}
         <Link href="https://github.com/sponsors/shenlu89">
           https://github.com/sponsors/shenlu89
         </Link>
