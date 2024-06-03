@@ -139,7 +139,6 @@ export default function Home() {
       earth
         .transition()
         .call(async () => {
-          console.log(sp);
           setSpecies([...sp.slice(1, 2), _species]);
           sp = [...sp.slice(1, 2), _species];
           _species = await mutate("/api/v1/random");
