@@ -68,7 +68,7 @@ export default function NotFound() {
                   WIKI_URI +
                   CONSERVATION_STATUS.get(species.conservation_status)
                 }
-                className={`flex absolute top-0 right-0 text-sm items-center ${species.status} justify-center rounded-full w-8 h-8 font-bold`}
+                className={`flex absolute top-0 right-0 text-sm items-center ${species.conservation_status} justify-center rounded-full w-8 h-8 font-bold`}
               >
                 {species.conservation_status}
               </Link>
@@ -97,8 +97,10 @@ export default function NotFound() {
                 <Link
                   href={WIKI_URI + COUNTRY_NAME.get(species.iso_code)}
                   className="hover:text-red-600"
-                >{`${species.code && getUnicodeFlagIcon(species.iso_code)} ${
-                  species.code && COUNTRY_NAME.get(species.iso_code)
+                >{`${
+                  species.iso_code && getUnicodeFlagIcon(species.iso_code)
+                } ${
+                  species.iso_code && COUNTRY_NAME.get(species.iso_code)
                 }`}</Link>
               </div>
             </div>
