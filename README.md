@@ -16,7 +16,7 @@ New contributors welcome! First off, thanks for your interest in contributing! ð
 
 ### Add More Species
 
-If you want to add more species to Amazing Endemic Species, you can follow the [contributing guidelines](#contributing-guidelines) or add species via an [issue](https://github.com/shenlu89/amazing-endemic-species/issues/new?assignees=shenlu89&labels=add-more-species&projects=&template=add_more_species.md&title=%5BAdd+More+Species%5D).
+If you want to add more species to Amazing Endemic Species, you can follow the [contributing guidelines](#contributing-guidelines) or submit an [issue](https://github.com/shenlu89/amazing-endemic-species/issues/new?assignees=shenlu89&labels=add-more-species&projects=&template=add_more_species.md&title=%5BAdd+More+Species%5D) labeling `add-more-species`.
 
 - **ONLY** accept `JPG` images with `150x150` px.
 - Ensure your photo features one species with good quality and easily identifiable
@@ -43,7 +43,7 @@ Share this [site](https://aes.shenlu.me) with your social network if you like it
 
 All the information about species is from the IUCN Red List website. To make the IUCN Red List a more complete Barometer of Life. Donate via this link: https://www.iucnredlist.org/support/donate.
 
-If you want to help me keep https://aes.shenlu.me alive, please support me via these link: https://github.com/sponsors/shenlu89
+If you want to help me keep https://aes.shenlu.me alive, please support me via link: https://github.com/sponsors/shenlu89
 
 ## License
 
