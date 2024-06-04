@@ -7,6 +7,7 @@ import SortBy from "@/components/sort-by";
 import useSWR from "swr";
 import fetcher from "@/lib/fetcher";
 import { BsSortDownAlt, BsSortUp } from "react-icons/bs";
+import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 
 export const runtime = "edge";
 
@@ -126,8 +127,18 @@ export default function Explore() {
       ) : (
         <div className="flex flex-wrap w-full">
           {!data?.results.length && (
-            <div className="flex flex-1 text-lg text-slate-600 justify-center items-center">
-              <div>{`No endemic species found for "${searchQuery}".`}</div>
+            <div className="flex flex-col mt-24 flex-1 text-lg text-slate-600 justify-center space-y-4 items-center">
+              <HiMiniMagnifyingGlass className="w-10 h-10 p-2 bg-slate-200 dark:text-slate-600 rounded-full" />
+              <div className="flex items-center">{`No endemic species found for "${searchQuery}".`}</div>
+              <div className="loading">
+                {new Array(4).fill(null).map((_, index) => (
+                  <div key={index} className="paw">
+                    <svg>
+                      <use xlinkHref="#paw" />
+                    </svg>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {data?.results.map((species: any) => {
