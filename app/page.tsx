@@ -7,6 +7,7 @@ import fetcher from "@/lib/fetcher";
 import useSWR, { useSWRConfig } from "swr";
 import { random } from "@/lib/utils";
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
+import dynamic from "next/dynamic";
 
 import {
   COUNTRY_NAME,
@@ -17,8 +18,8 @@ import {
   WORLD_110M,
 } from "@/lib/constant";
 import Link from "@/components/custom-link";
-import Insights from "@/components/insights";
 import AES from "@/data/aes.json";
+const Insights = dynamic(() => import("@/components/insights"));
 
 const randomSpecies = AES[Math.floor(AES.length * Math.random())];
 
