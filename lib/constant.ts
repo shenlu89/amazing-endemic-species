@@ -1,6 +1,13 @@
 import { objToMap } from "./utils";
 
-export const COUNTRY_NAME = objToMap({
+export const SORT_TYPES: any = objToMap({
+  "IUCN Red List ID": "id",
+  "Common Name": "common_name",
+  "Scientific Name": "scientific_name",
+  "ISO Code": "iso_code",
+});
+
+export const COUNTRY_NAME: any = objToMap({
   UZ: "Uzbekistan",
   PS: "Palestinian Territory, Occupied",
   QA: "Qatar",
@@ -254,7 +261,7 @@ export const COUNTRY_NAME = objToMap({
   VE: "Venezuela, Bolivarian Republic of",
 });
 
-export const CONSERVATION_STATUS = objToMap({
+export const CONSERVATION_STATUS: any = objToMap({
   EX: "Extinction",
   EW: "Extinct_in_the_wild",
   CR: "Critically_endangered",
