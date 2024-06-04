@@ -67,6 +67,7 @@ export default function Explore() {
       >
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         <div className="items-center space-x-2 hidden md:flex">
+          <span>Sort by:</span>{" "}
           <SortBy
             sortType={sortType}
             setSortType={setSortType}
@@ -80,7 +81,6 @@ export default function Explore() {
           Find <span className="text-red-600">{data?.count || 0}</span> results.
         </div>
         <div className="flex items-center space-x-2">
-          <span>Sort by:</span>{" "}
           <div
             className="cursor-pointer text-red-600"
             onClick={() => {
@@ -98,9 +98,9 @@ export default function Explore() {
             }}
           >
             {sortDirection === "desc" ? (
-              <BsSortDownAlt className="w-6 h-6" />
+              <BsSortDownAlt title="Descending Order" className="w-6 h-6" />
             ) : (
-              <BsSortUp className="w-6 h-6" />
+              <BsSortUp title="Ascending Order" className="w-6 h-6" />
             )}
           </div>
         </div>
