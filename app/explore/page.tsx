@@ -83,19 +83,14 @@ export default function Explore() {
           <div
             className="cursor-pointer text-red-600"
             onClick={() => {
-              sortDirection === "asc"
-                ? setSortDirection("desc")
-                : setSortDirection("asc");
+              setSortDirection(sortDirection === "asc" ? "desc" : "asc");
               router.push(
                 pathname +
                   "?" +
                   createQueryString([
                     {
                       name: "sortDirection",
-                      value:
-                        searchParams?.get("sortDirection") === "asc"
-                          ? "desc"
-                          : "asc",
+                      value: sortDirection,
                     },
                   ])
               );
