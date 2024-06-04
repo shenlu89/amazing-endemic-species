@@ -4,6 +4,14 @@ const headerNavLinks = [
     link: "/",
   },
   {
+    name: "Explore",
+    link: "/explore",
+  },
+  {
+    name: "AddMoreSpecies",
+    link: "https://github.com/shenlu89/amazing-endemic-species/issues/new?assignees=shenlu89&labels=add-more-species&projects=&template=add_more_species.md&title=%5BAdd+More+Species%5D",
+  },
+  {
     name: "API",
     link: "/api",
   },
@@ -33,6 +41,13 @@ const aboutPage = {
   metadata: {
     title: "About",
     description: "All the information about Amazing Endemic Species.",
+  },
+};
+
+const explorePage = {
+  metadata: {
+    title: "Explore",
+    description: "Explore all Amazing Endemic Species.",
   },
 };
 
@@ -73,4 +88,4 @@ const homePage = {
   },
 };
 
-export { headerNavLinks, homePage, apiPage, aboutPage };
+export { headerNavLinks, homePage, apiPage, aboutPage, explorePage };
