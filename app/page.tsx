@@ -242,13 +242,10 @@ export default function Home() {
         {!_loading || !species[0].scientific_name ? (
           <div className="flex flex-col items-center space-y-1">
             <Link
-              href={
-                IUCN_RED_LIST_URI +
-                species[0].scientific_name.replace(/\s/g, "%20")
-              }
+              href={WIKI_URI + species[0].common_name.replace(/\s/g, "%20")}
               className="font-bold text-lg hover:text-red-600"
             >
-              {species[0].scientific_name}
+              {species[0].common_name}
             </Link>
             <Link
               href={
