@@ -78,7 +78,7 @@ export default function Explore() {
       </form>
       <div className="flex w-full justify-between px-2">
         <div>
-          Find <span className="text-red-600">{data?.count || 0}</span> results.
+          Found <span className="text-red-600">{data?.count || 0}</span> results.
         </div>
         <div className="flex items-center space-x-2">
           <div
