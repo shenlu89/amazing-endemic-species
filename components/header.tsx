@@ -110,7 +110,7 @@ const Header: NextPage = () => {
             </Link>
           ))}
         </div>
-        {/* <GitHubStars /> */}
+        <GitHubStars />
       </nav>
     </header>
   );
