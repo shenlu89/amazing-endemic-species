@@ -239,35 +239,31 @@ export default function Home() {
             </Link>
           )}
         </div>
-        {!_loading || !species[0].scientific_name ? (
-          <div className="flex flex-col items-center space-y-1">
-            <Link
-              href={WIKI_URI + species[0].common_name.replace(/\s/g, "%20")}
-              className="font-bold text-lg hover:text-red-600"
-            >
-              {species[0].common_name}
-            </Link>
-            <Link
-              href={
-                IUCN_RED_LIST_URI +
-                species[0].scientific_name.replace(/\s/g, "%20")
-              }
-              className="hover:text-red-600"
-            >
-              {species[0].scientific_name}
-            </Link>
-            <Link
-              href={WIKI_URI + COUNTRY_NAME.get(species[0].iso_code)}
-              className="hover:text-red-600"
-            >{`${
-              species[0].iso_code && getUnicodeFlagIcon(species[0].iso_code)
-            } ${
-              species[0].iso_code && COUNTRY_NAME.get(species[0].iso_code)
-            }`}</Link>
-          </div>
-        ) : (
-          <div className="text-lg p-2">Loading...</div>
-        )}
+        <div className="flex flex-col items-center space-y-1">
+          <Link
+            href={WIKI_URI + species[0].common_name.replace(/\s/g, "%20")}
+            className="font-bold text-lg hover:text-red-600"
+          >
+            {species[0].common_name}
+          </Link>
+          <Link
+            href={
+              IUCN_RED_LIST_URI +
+              species[0].scientific_name.replace(/\s/g, "%20")
+            }
+            className="hover:text-red-600"
+          >
+            {species[0].scientific_name}
+          </Link>
+          <Link
+            href={WIKI_URI + COUNTRY_NAME.get(species[0].iso_code)}
+            className="hover:text-red-600"
+          >{`${
+            species[0].iso_code && getUnicodeFlagIcon(species[0].iso_code)
+          } ${
+            species[0].iso_code && COUNTRY_NAME.get(species[0].iso_code)
+          }`}</Link>
+        </div>
       </div>
       <img
         src={species[1].image}
