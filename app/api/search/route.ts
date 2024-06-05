@@ -18,7 +18,7 @@ export async function GET(request: Request) {
       case "scientific_name":
         column = aes.scientific_name;
         break;
-      case "iso_name":
+      case "iso_code":
         column = aes.iso_code;
         break;
       default:
