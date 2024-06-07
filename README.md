@@ -4,11 +4,13 @@ Amazing Endemic Species (AES) is an open-source, community-driven SaaS (Species-
 
 - 🌍 **3D Dynamic Globe**: AES maps endemic species all over the world in a 3D dynamic globe.
 
+- 🔍 **Explore Endemic Species Dataset**: Dive into comprehensive endemic species information that include species classification, geographical distribution, conservation status and more details from [Wikipedia](https://www.wikipedia.org/) or [IUCN Red List](https://www.iucnredlist.org/).
+
 - 🦎 **User-Friendly API Services**: AES provides easy-to-use API services, which means you can seamlessly access AES data for your scientific research or any secondary development projects.
 
-- 🔍 **Open-Source and Community-Driven**: Being open-source means transparency and the opportunity for anyone to improve the project. Such as, you can contribute to the database, ensuring that the information is continually updated and accurate.
+- ✨ **Open-Source and Community-Driven**: Being open-source means transparency and the opportunity for anyone to improve the project. Such as, you can contribute to the database ensuring that the information is continually updated and accurate.
 
-Join the AES community and help to map and protect the world’s unique species! Whether you’re contributing data, using the API for your research, or simply exploring the globe, every little bit helps.
+Join the AES community and help to map and protect the world’s endemic species! Whether you’re contributing data, using the API for your research, or simply exploring the globe, every little bit helps.
 
 ## Contributing
 
@@ -16,7 +18,7 @@ New contributors welcome! First off, thanks for your interest in contributing! �
 
 ### Add More Species
 
-If you want to add more species to Amazing Endemic Species, you can follow the [contributing guidelines](#contributing-guidelines) or submit an [issue](https://github.com/shenlu89/amazing-endemic-species/issues/new?assignees=shenlu89&labels=add-more-species&projects=&template=add_more_species.md&title=%5BAdd+More+Species%5D) labeling `add-more-species`.
+If you want to add more species to AES, you can follow the [contributing guidelines](#contributing-guidelines) or submit an [issue](https://github.com/shenlu89/amazing-endemic-species/issues/new?assignees=shenlu89&labels=add-more-species&projects=&template=add_more_species.md&title=%5BAdd+More+Species%5D) labeling `add-more-species`.
 
 - **ONLY** accept `JPG` images with `150x150` px.
 - Ensure your photo features one species with good quality and easily identifiable
@@ -37,13 +39,11 @@ Give a ⭐️ if this project helped you!
 
 Share this [site](https://aes.shenlu.me) with your social network if you like it.
 
-[Tell me](https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=show-and-tell) if you've made something cool by using [Amazing Endemic Species API]().
+[Tell me](https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=show-and-tell) if you've made something cool by using [Amazing Endemic Species API](https://aes.shenlu.me/api).
 
 ## Donate
 
 All the information about species is from the IUCN Red List [website](https://www.iucnredlist.org/). To make the IUCN Red List a more complete Barometer of Life. Donate via this link: https://www.iucnredlist.org/support/donate.
-
-If you want to help me keep https://aes.shenlu.me alive, please support me via link: https://github.com/sponsors/shenlu89
 
 ## License
 
