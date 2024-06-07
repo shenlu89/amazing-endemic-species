@@ -18,20 +18,28 @@ export default function About() {
           over the world in a 3D dynamic globe.
         </li>
         <li>
+          🔍 <strong>Explore Endemic Species Dataset</strong>: Dive into
+          comprehensive endemic species information that include species
+          classification, geographical distribution, conservation status and
+          more details from
+          <Link href="https://www.wikipedia.org/">Wikipedia</Link> or{" "}
+          <Link href="https://www.iucnredlist.org/">IUCN Red List</Link>.
+        </li>
+        <li>
           🦎 <strong>User-Friendly API Services</strong>: AES provides
           easy-to-use API services, which means you can seamlessly access AES
           data for your scientific research or any secondary development
           projects.
         </li>
         <li>
-          🔍 <strong>Open-Source and Community-Driven</strong>: Being
+          ✨ <strong>Open-Source and Community-Driven</strong>: Being
           open-source means transparency and the opportunity for anyone to
           improve the project. Such as, you can contribute to the database,
           ensuring that the information is continually updated and accurate.
         </li>
       </ul>
       <p>
-        Join the AES community and help to map and protect the world’s unique
+        Join the AES community and help to map and protect the world’s endemic
         species! Whether you’re contributing data, using the API for your
         research, or simply exploring the globe, every little bit helps.
       </p>
@@ -109,13 +117,6 @@ export default function About() {
           https://www.iucnredlist.org/support/donate
         </Link>
         .
-      </p>
-      <p>
-        If you want to help me keep https://aes.shenlu.me alive, please support
-        me via link:{" "}
-        <Link href="https://github.com/sponsors/shenlu89">
-          https://github.com/sponsors/shenlu89
-        </Link>
       </p>
       <h2>Contact</h2>
       <p>
