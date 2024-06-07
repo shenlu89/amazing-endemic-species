@@ -12,8 +12,8 @@ Please add the following species to the AES database. Ensure that all requiremen
 
 **Requirements:**
 
-Scientific Name: e.g. Ailuropoda melanoleuca
-Species Image: Paste an image or give a image URL
+Scientific Name: Paste a correct scientific name of species here, e.g. Ailuropoda melanoleuca.
+Species Image: Paste an image or give a image URL here, e.g. https://example.com/image.jpg.
 
 - ONLY accept `JPG` images with `150x150` px resolution.
 - Ensure the photo features one species with good quality and is easily identifiable.
