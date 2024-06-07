@@ -21,7 +21,7 @@ export default function About() {
           🔍 <strong>Explore Endemic Species Dataset</strong>: Dive into
           comprehensive endemic species information that include species
           classification, geographical distribution, conservation status and
-          more details from
+          more details from{" "}
           <Link href="https://www.wikipedia.org/">Wikipedia</Link> or{" "}
           <Link href="https://www.iucnredlist.org/">IUCN Red List</Link>.
         </li>
