@@ -35,7 +35,7 @@ const Header: NextPage = () => {
               href="https://github.com/shenlu89/amazing-endemic-species/releases"
               target="_blank"
             >
-              Alpha v{Package.version}
+              Beta v{Package.version}
             </Link>
           </sup>
         </div>
