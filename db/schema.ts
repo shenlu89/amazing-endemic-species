@@ -10,3 +10,8 @@ export const aes = sqliteTable("aes", {
   iso_code: text("iso_code").notNull(),
   common_name: text("common_name").notNull(),
 });
+
+export const view = sqliteTable("view", {
+  id: integer("id").notNull().primaryKey().unique(),
+  views: integer("views").notNull(),
+});
