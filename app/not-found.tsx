@@ -38,7 +38,7 @@ export default function NotFound() {
     <section className="flex flex-col h-full items-center pt-12">
       <h1 className="font-extrabold text-5xl tracking-tight mb-4">404</h1>
       <span className="text-gray-600 mb-4">
-        Page Not Found. Go back to{" "}
+        Page Not Found. Go Back to{" "}
         <Link
           href="/"
           className="underline hover:text-black dark:hover:text-white underline-offset-[3px]"
