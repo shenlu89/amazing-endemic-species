@@ -1,10 +1,10 @@
 import { objToMap } from "./utils";
 
 export const SORT_TYPES: any = objToMap({
-  "IUCN Red List ID": "id",
+  "Taxonomy ID": "id",
   "Common Name": "common_name",
   "Scientific Name": "scientific_name",
-  "ISO Code": "iso_code",
+  Country: "iso_code",
 });
 
 export const COUNTRY_NAME: any = objToMap({

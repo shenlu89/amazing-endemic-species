@@ -11,10 +11,10 @@ import { useCallback } from "react";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 const sortTypes = [
-  { name: "IUCN Red List ID" },
+  { name: "Taxonomy ID" },
   { name: "Common Name" },
   { name: "Scientific Name" },
-  { name: "ISO Code" },
+  { name: "Country" },
 ];
 
 export default function Sortby({ children, ...props }: any) {

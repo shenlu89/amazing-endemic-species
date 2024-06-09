@@ -20,7 +20,7 @@ const SpeciesItem = ({ children, ...props }: any): ReactElement => {
       <div className="flex m-2 space-x-4 bg-slate-100 border rounded justify-between p-4 w-full">
         <div className="flex flex-col space-y-2 text-sm no-wrap truncate">
           <div className="flex space-x-1">
-            <span className="hidden md:flex">IUCN Red List ID:</span>
+            <span className="hidden md:flex">Taxonomy ID:</span>
             <span className="md:hidden flex">#</span>
             <span className="text-black">{id}</span>
           </div>
@@ -46,7 +46,7 @@ const SpeciesItem = ({ children, ...props }: any): ReactElement => {
             href={WIKI_URI + COUNTRY_NAME.get(iso_code)}
             className="flex space-x-1 "
           >
-            <span className="hidden md:flex">ISO Code:</span>
+            <span className="hidden md:flex">Country:</span>
             <span className="text-black font-bold hover:text-red-600">{`${getUnicodeFlagIcon(
               iso_code
             )} ${COUNTRY_NAME.get(iso_code)}`}</span>

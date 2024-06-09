@@ -52,7 +52,7 @@ export default function SearchBar({
         value={decodeURI(searchQuery || "")}
         onChange={(event) => setSearchQuery(event.target.value)}
         className="pl-10 pr-4 py-2 w-full text-sm bg-white border focus:bg-slate-100 rounded focus:outline-none placeholder:text-slate-400"
-        placeholder={`Type "/" to search endemic species by names and ISO code.`}
+        placeholder={`Type "/" to search by species name and country.`}
       />
       <HiOutlineMagnifyingGlass className="absolute text-slate-400 top-1/2 transform translate-y-[-50%] left-3 w-5 h-5" />
       <HiXCircle

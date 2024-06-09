@@ -27,7 +27,7 @@ export default function Explore() {
     }
   );
 
-  const [sortType, setSortType] = useState<any>({ name: "IUCN Red List ID" });
+  const [sortType, setSortType] = useState<any>({ name: "Taxonomy ID" });
   const [sortDirection, setSortDirection] = useState<string>("desc");
   const createQueryString = useCallback(
     (queryParams: { name: string; value: string }[]) => {
@@ -78,7 +78,8 @@ export default function Explore() {
       </form>
       <div className="flex w-full justify-between px-2">
         <div>
-          Found <span className="text-red-600">{data?.count || 0}</span> results.
+          Found <span className="text-red-600">{data?.count || 0}</span>{" "}
+          results.
         </div>
         <div className="flex items-center space-x-2">
           <div
