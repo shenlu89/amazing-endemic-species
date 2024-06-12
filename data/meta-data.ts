@@ -47,7 +47,7 @@ const aboutPage = {
 const explorePage = {
   metadata: {
     title: "Explore",
-    description: "Explore all Amazing Endemic Species.",
+    description: "Explore all Amazing Endemic Species all over the world.",
   },
 };
 
