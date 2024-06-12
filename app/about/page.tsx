@@ -93,7 +93,23 @@ export default function About() {
         </Link>
         .
       </p>
-
+      <h2>FAQs</h2>
+      <h3>What's the defination of endemic species in AES?</h3>
+      <p>
+        The defination of "endemic species" refers to a species that is native
+        to and restricted to a specific geographical area. This area means the
+        country code,{" "}
+        <Link href="https://en.wikipedia.org/wiki/ISO_3166">ISO 3166</Link>.
+      </p>
+      <h3>Why should we pay attention for endemic species?</h3>
+      <p>
+        Endemic species are not found naturally anywhere else in the world.
+        These species have typically evolved in isolation over long periods,
+        adapting to their unique environment, and can be highly sensitive to
+        changes in their habitat. Endemism is significant in conservation
+        biology because endemic species are often more vulnerable to extinction
+        due to their limited distribution and specialized habitat requirements.
+      </p>
       <h2>Support</h2>
       <p>Give a ⭐️ if this project helped you!</p>
       <p>
