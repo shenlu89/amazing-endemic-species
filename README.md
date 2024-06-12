@@ -33,6 +33,23 @@ If you experience bugs, feel free to open an [issue](https://github.com/shenlu89
 
 For more details, see [Best Practice for Pull Requests on GitHub](https://www.shenlu.me/blog/best-practice-for-pull-requests-on-github)
 
+## FAQs
+
+### What's the defination of endemic species in AES?
+
+The defination of "endemic species" refers to a species that is native
+to and restricted to a specific geographical area. This area means the
+country code, [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166).
+
+### Why should we pay attention for endemic species?
+
+Endemic species are not found naturally anywhere else in the world.
+These species have typically evolved in isolation over long periods,
+adapting to their unique environment, and can be highly sensitive to
+changes in their habitat. Endemism is significant in conservation
+biology because endemic species are often more vulnerable to extinction
+due to their limited distribution and specialized habitat requirements.
+
 ## Support
 
 Give a ⭐️ if this project helped you!
