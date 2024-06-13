@@ -1,6 +1,6 @@
 "use client";
 import type { NextPage } from "next";
-import Link from "next/link";
+import Link from "@/components/custom-link";
 import Image from "next/image";
 import Package from "@/package.json";
 import { headerNavLinks } from "@/data/meta-data";
@@ -33,7 +33,6 @@ const Header: NextPage = () => {
             <Link
               className="flex items-center"
               href="https://github.com/shenlu89/amazing-endemic-species/releases"
-              target="_blank"
             >
               Beta v{Package.version}
             </Link>
