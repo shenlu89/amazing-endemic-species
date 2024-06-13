@@ -529,9 +529,6 @@ export const WIKI_URI = "https://en.wikipedia.org/wiki/";
 
 export const IUCN_RED_LIST_URI = "http://apiv3.iucnredlist.org/api/v3/website/";
 
-export const WORLD_110M =
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/95802/world-110m.json";
-
 export const API_URLS = [
   "/api/v1/speciescount",
   "/api/v1/countrycount",

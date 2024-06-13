@@ -15,7 +15,6 @@ import {
   WIKI_URI,
   IUCN_RED_LIST_URI,
   ISO_MAP,
-  WORLD_110M,
 } from "@/lib/constant";
 import Link from "@/components/custom-link";
 import AES from "@/data/aes.json";
@@ -45,7 +44,7 @@ export default function Home() {
   const height = 540;
 
   const { mutate } = useSWRConfig();
-  const { data, error, isLoading }: any = useSWR(WORLD_110M, fetcher, {
+  const { data, error, isLoading }: any = useSWR("/world-110m.json", fetcher, {
     revalidateOnMount: true,
   });
 
@@ -215,15 +214,15 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center space-y-2 fixed md:mt-24 mt-[6.5rem]">
         <div className="relative">
           <Link
-            href={WIKI_URI + species[0].scientific_name.replace(/\s/g, "_")}
+            href={WIKI_URI + species[0]?.scientific_name?.replace(/\s/g, "_")}
           >
             <img
-              src={species[0].image}
+              src={species[0]?.image}
               width={130}
               height={130}
-              alt={species[0].scientific_name}
+              alt={species[0]?.scientific_name}
               className={`rounded-full shadow ${
-                species[0].image || "opacity-0"
+                species[0]?.image || "opacity-0"
               }  `}
             />
           </Link>
@@ -231,42 +230,42 @@ export default function Home() {
             <Link
               href={
                 WIKI_URI +
-                CONSERVATION_STATUS.get(species[0].conservation_status)
+                CONSERVATION_STATUS.get(species[0]?.conservation_status)
               }
-              className={`flex absolute top-0 right-0 text-sm items-center ${species[0].conservation_status} justify-center rounded-full w-8 h-8 font-bold`}
+              className={`flex absolute top-0 right-0 text-sm items-center ${species[0]?.conservation_status} justify-center rounded-full w-8 h-8 font-bold`}
             >
-              {species[0].conservation_status}
+              {species[0]?.conservation_status}
             </Link>
           )}
         </div>
         <div className="flex flex-col items-center space-y-1">
           <Link
-            href={WIKI_URI + species[0].common_name.replace(/\s/g, "%20")}
+            href={WIKI_URI + species[0]?.common_name?.replace(/\s/g, "%20")}
             className="font-bold text-lg hover:text-red-600"
           >
-            {species[0].common_name}
+            {species[0]?.common_name}
           </Link>
           <Link
             href={
               IUCN_RED_LIST_URI +
-              species[0].scientific_name.replace(/\s/g, "%20")
+              species[0].scientific_name?.replace(/\s/g, "%20")
             }
             className="hover:text-red-600"
           >
-            {species[0].scientific_name}
+            {species[0]?.scientific_name}
           </Link>
           <Link
-            href={WIKI_URI + COUNTRY_NAME.get(species[0].iso_code)}
+            href={WIKI_URI + COUNTRY_NAME.get(species[0]?.iso_code)}
             className="hover:text-red-600"
           >{`${
-            species[0].iso_code && getUnicodeFlagIcon(species[0].iso_code)
+            species[0].iso_code && getUnicodeFlagIcon(species[0]?.iso_code)
           } ${
-            species[0].iso_code && COUNTRY_NAME.get(species[0].iso_code)
+            species[0].iso_code && COUNTRY_NAME.get(species[0]?.iso_code)
           }`}</Link>
         </div>
       </div>
       <img
-        src={species[1].image}
+        src={species[1]?.image}
         width={130}
         height={130}
         alt=""
