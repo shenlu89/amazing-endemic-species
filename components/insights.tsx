@@ -9,17 +9,19 @@ export default function Metrics() {
     Promise.all(urls.map((url) => fetcher(url, {})))
   );
 
+  const [species, countries, views] = data || [];
+
   return (
     <div className="flex h-6 space-x-4 items-center md:mt-12 mt-16 fixed text-fade">
-      <Metric isLoading={isLoading} count={data?.[0]?.count} label="Species" />
+      <Metric isLoading={isLoading} count={species?.count} label="Species" />
       <div className="flex h-full border-y-transparent border-l-transparent border border-r-slate-300"></div>
       <Metric
         isLoading={isLoading}
-        count={data?.[1]?.count}
+        count={countries?.count}
         label="Countries"
       />
       <div className="flex h-full border-y-transparent border-l-transparent border border-r-slate-300"></div>
-      <Metric isLoading={isLoading} count={data?.[2]?.total} label="Views" />
+      <Metric isLoading={isLoading} count={views?.total} label="Views" />
     </div>
   );
 }
