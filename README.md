@@ -37,7 +37,7 @@ For more details, see [Best Practice for Pull Requests on GitHub](https://www.sh
 
 ### What's the defination of endemic species in AES?
 
-The defination of "endemic species" refers to a species that is native
+The defination of "endemic species" in AES refers to a species that is native
 to and restricted to a specific geographical area. This area means the
 country code, [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166).
 
