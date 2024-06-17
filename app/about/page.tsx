@@ -96,7 +96,7 @@ export default function About() {
       <h2>FAQs</h2>
       <h3>What's the defination of endemic species in AES?</h3>
       <p>
-        The defination of "endemic species" refers to a species that is native
+        The defination of "endemic species" in AES refers to a species that is native
         to and restricted to a specific geographical area. This area means the
         country code,{" "}
         <Link href="https://en.wikipedia.org/wiki/ISO_3166">ISO 3166</Link>.
