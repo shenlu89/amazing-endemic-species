@@ -5,7 +5,7 @@ const CustomLink = (props: any) => {
   if (href.startsWith("#")) {
     return <a {...props} />;
   }
-  if (!href.startsWith("/") || href.startsWith("/api")) {
+  if (!href.startsWith("/")) {
     props = {
       target: "_blank",
       rel: "noopener noreferrer",
