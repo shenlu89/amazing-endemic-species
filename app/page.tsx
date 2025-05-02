@@ -214,7 +214,7 @@ export default function Home() {
             href={WIKI_URI + species[0]?.scientific_name?.replace(/\s/g, "_")}
           >
             <img
-              src={species[0]?.image || null}
+              src={species[0]?.image || undefined}
               width={130}
               height={130}
               alt={species[0]?.scientific_name}
