@@ -3,9 +3,9 @@ import { Redis } from "@upstash/redis";
 
 const redis = Redis.fromEnv();
 
-export async function GET(_request: Request, name: string) {
+export async function GET() {
   try {
-    const views = await redis.incr(name);
+    const views = await redis.incr("aes");
 
     return NextResponse.json(
       {
