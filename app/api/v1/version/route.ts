@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export async function GET(_request: Request, name: string) {
+export async function GET() {
   try {
     return NextResponse.json({ version: "2024-6" }, { status: 200 });
   } catch (e: any) {
