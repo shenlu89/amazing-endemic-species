@@ -17,7 +17,7 @@ const SpeciesItem = ({ children, ...props }: any): ReactElement => {
 
   return (
     <div className={className}>
-      <div className="flex m-2 space-x-4 bg-slate-100 border rounded justify-between p-4 w-full">
+      <div className="flex m-2 space-x-4 bg-slate-100 border border-slate-300 border-slate-200 rounded justify-between p-4 w-full">
         <div className="flex flex-col space-y-2 text-sm no-wrap truncate">
           <div className="flex space-x-1">
             <span className="hidden md:flex">Taxonomy ID:</span>

@@ -45,19 +45,19 @@ export default function Sortby({ children, ...props }: any) {
           setSortType(st);
           router.push(
             pathname +
-              "?" +
-              createQueryString([
-                {
-                  name: "sortType",
-                  value: SORT_TYPES.get(st.name),
-                },
-              ])
+            "?" +
+            createQueryString([
+              {
+                name: "sortType",
+                value: SORT_TYPES.get(st.name),
+              },
+            ])
           );
         }}
       >
         {({ open }) => (
           <div className="relative w-full">
-            <ListboxButton className="relative w-full cursor-pointer rounded border bg-white py-2 pl-3 pr-10 text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+            <ListboxButton className="relative w-full cursor-pointer rounded border border-slate-300 bg-white py-2 pl-3 pr-10 text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
               <span className="block truncate">{sortType.name}</span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                 {open ? (
@@ -73,14 +73,13 @@ export default function Sortby({ children, ...props }: any) {
                 )}
               </span>
             </ListboxButton>
-            <ListboxOptions className="absolute mt-1 max-h-60 w-full overflow-auto rounded bg-white text-base ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+            <ListboxOptions className="absolute mt-1 max-h-60 w-full overflow-auto rounded bg-white text-base border border-slate-300  ring-opacity-5 focus:outline-none sm:text-sm">
               {sortTypes.map((person, personIdx) => (
                 <ListboxOption
                   key={personIdx}
                   className={({ focus, selected }) =>
                     `relative cursor-pointer select-none py-2 pl-3
-                       ${focus && !selected && "bg-red-50"} ${
-                      selected && "bg-red-100"
+                       ${focus && !selected && "bg-red-50"} ${selected && "bg-red-100"
                     }`
                   }
                   value={person}
@@ -88,9 +87,8 @@ export default function Sortby({ children, ...props }: any) {
                   {({ focus, selected }) => (
                     <>
                       <span
-                        className={`block ${
-                          selected ? "text-red-500" : "font-normal"
-                        } ${focus ? "text-red-500" : "text-black"}`}
+                        className={`block ${selected ? "text-red-500" : "font-normal"
+                          } ${focus ? "text-red-500" : "text-black"}`}
                       >
                         {person.name}
                       </span>

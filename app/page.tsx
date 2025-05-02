@@ -32,9 +32,8 @@ export default function Home() {
       common_name: "",
     },
     {
-      image: `${typeof location !== "undefined" && location.origin}/images/${
-        randomSpecies.id
-      }.jpg`,
+      image: `${typeof location !== "undefined" && location.origin}/images/${randomSpecies.id
+        }.jpg`,
       ...randomSpecies,
     },
   ]);
@@ -196,13 +195,11 @@ export default function Home() {
             <div
               style={{
                 animationDelay: `${index * 15}ms`,
-                transform: `translate3d(${random(-300, 300) | 0}px, ${
-                  random(-300, 300) | 0
-                }px, ${random(-300, 300) | 0}px)`,
+                transform: `translate3d(${random(-300, 300) | 0}px, ${random(-300, 300) | 0
+                  }px, ${random(-300, 300) | 0}px)`,
               }}
-              className={`text-fly-in transform-gpu ${
-                char === " " ? "inline" : "inline-block"
-              }`}
+              className={`text-fly-in transform-gpu ${char === " " ? "inline" : "inline-block"
+                }`}
               key={index}
             >
               {char}
@@ -217,13 +214,12 @@ export default function Home() {
             href={WIKI_URI + species[0]?.scientific_name?.replace(/\s/g, "_")}
           >
             <img
-              src={species[0]?.image}
+              src={species[0]?.image || null}
               width={130}
               height={130}
               alt={species[0]?.scientific_name}
-              className={`rounded-full shadow ${
-                species[0]?.image || "opacity-0"
-              }  `}
+              className={`rounded-full shadow ${species[0]?.image || "opacity-0"
+                }  `}
             />
           </Link>
           {!_loading && (
@@ -257,11 +253,9 @@ export default function Home() {
           <Link
             href={WIKI_URI + COUNTRY_NAME.get(species[0]?.iso_code)}
             className="hover:text-red-600"
-          >{`${
-            species[0].iso_code && getUnicodeFlagIcon(species[0]?.iso_code)
-          } ${
-            species[0].iso_code && COUNTRY_NAME.get(species[0]?.iso_code)
-          }`}</Link>
+          >{`${species[0].iso_code && getUnicodeFlagIcon(species[0]?.iso_code)
+            } ${species[0].iso_code && COUNTRY_NAME.get(species[0]?.iso_code)
+            }`}</Link>
         </div>
       </div>
       <img

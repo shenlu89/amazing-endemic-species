@@ -88,13 +88,13 @@ export default function Explore() {
               setSortDirection(sortDirection === "asc" ? "desc" : "asc");
               router.push(
                 pathname +
-                  "?" +
-                  createQueryString([
-                    {
-                      name: "sortDirection",
-                      value: sortDirection,
-                    },
-                  ])
+                "?" +
+                createQueryString([
+                  {
+                    name: "sortDirection",
+                    value: sortDirection,
+                  },
+                ])
               );
             }}
           >
@@ -113,7 +113,7 @@ export default function Explore() {
               key={index}
               className="flex relative text-slate-600 items-center rounded md:w-1/2 w-full"
             >
-              <div className="flex m-2 space-x-4 bg-slate-100 border justify-between p-4 w-full">
+              <div className="flex m-2 space-x-4 bg-slate-100 border border-slate-300 justify-between p-4 w-full">
                 <div className="flex flex-col space-y-2 text-sm no-wrap truncate w-48">
                   <div className="flex animate-pulse h-5 bg-slate-300 w-36"></div>
                   <div className="flex animate-pulse h-5 bg-slate-200 w-full"></div>
@@ -127,7 +127,7 @@ export default function Explore() {
         </div>
       ) : (
         <div className="flex flex-wrap w-full">
-          {!data?.results.length && (
+          {!data?.results?.length && (
             <div className="flex flex-col mt-24 flex-1 text-lg text-slate-600 justify-center space-y-4 items-center">
               <HiMiniMagnifyingGlass className="w-10 h-10 p-2 bg-slate-200 dark:text-slate-600 rounded-full" />
               <div className="flex items-center">{`No endemic species found for "${searchQuery}".`}</div>
@@ -142,7 +142,7 @@ export default function Explore() {
               </div>
             </div>
           )}
-          {data?.results.map((species: any) => {
+          {data?.results?.map((species: any) => {
             return (
               <SpeciesItem
                 className="flex relative text-slate-600 items-center rounded md:w-1/2 w-full"

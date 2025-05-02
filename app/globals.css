@@ -1,6 +1,61 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+button {
+  cursor: pointer;
+}
+
+.prose a {
+  color: theme('colors.blue.600');
+  /* #2563eb */
+}
+
+.prose a:hover {
+  color: theme('colors.blue.800');
+  /* #1e40af */
+}
+
+.prose h1 {
+  font-size: theme('fontSize.2xl');
+  /* 1.5rem */
+}
+
+.prose h2 {
+  font-weight: theme('fontWeight.extrabold');
+  /* 800 */
+  font-size: theme('fontSize.xl');
+  /* 1.25rem */
+  margin-top: 0;
+}
+
+.prose h3 {
+  font-weight: theme('fontWeight.extrabold');
+  /* 800 */
+  font-size: theme('fontSize.lg');
+  /* 1.125rem */
+  margin-top: 0;
+}
+
+.prose hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose p {
+  color: theme('colors.slate.800');
+  /* #1e293b */
+  margin-top: 0;
+}
+
+.prose img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose ol,
+.prose ul {
+  margin-top: 0;
+}
 
 .text-fade {
   opacity: 0;
@@ -24,6 +79,7 @@
     opacity: 0;
     transform: scale(0.1), translate3d(0, 0, 0);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -35,10 +91,12 @@
     opacity: 0;
     transform: translateY(6rem);
   }
+
   60% {
     opacity: 1;
     transform: translateY(6rem);
   }
+
   100% {
     opacity: 1;
     transform: translateY(21rem);
@@ -49,6 +107,7 @@
   from {
     opacity: 0.8;
   }
+
   to {
     opacity: 1;
   }
@@ -124,12 +183,14 @@
   height: 3em;
   color: #d31145;
 }
+
 .loading .paw {
   width: 1em;
   height: 1em;
   animation: 2s pawAnimation ease-in-out infinite;
   opacity: 0;
 }
+
 .loading .paw svg {
   width: 50%;
   height: 50%;
@@ -139,6 +200,7 @@
 .loading .paw:nth-child(odd) {
   transform: rotate(-10deg);
 }
+
 .loading .paw:nth-child(even) {
   transform: rotate(10deg) translate(50%, 0);
 }
@@ -147,14 +209,17 @@
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
+
 .loading .paw:nth-child(2) {
   -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
 }
+
 .loading .paw:nth-child(3) {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
+
 .loading .paw:nth-child(4) {
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
@@ -164,6 +229,7 @@
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
