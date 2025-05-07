@@ -6,7 +6,7 @@ export const metadata: Metadata = aboutPage.metadata;
 
 export default function About() {
   return (
-    <article className="flex flex-col max-w-screen-lg container mx-auto justify-center relative prose">
+    <article className="flex flex-col max-w-screen-lg container mx-auto justify-center relative prose px-4">
       <h1 id="about">About</h1>
       <p>
         Amazing Endemic Species (AES) is an open-source, community-driven SaaS
@@ -86,13 +86,6 @@ export default function About() {
           you've made.
         </li>
       </ol>
-      <p>
-        For more details, see{" "}
-        <Link href="https://github.com/shenlu89/amazing-endemic-species/discussions/new?category=general">
-          Best Practice for Pull Requests on GitHub
-        </Link>
-        .
-      </p>
       <h2>FAQs</h2>
       <h3>What's the defination of endemic species in AES?</h3>
       <p>
