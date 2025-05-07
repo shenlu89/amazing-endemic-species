@@ -31,8 +31,6 @@ If you experience bugs, feel free to open an [issue](https://github.com/shenlu89
 2. Make the necessary changes to the data or code.
 3. Create a pull request with a clear description of the modifications you've made.
 
-For more details, see [Best Practice for Pull Requests on GitHub](https://www.shenlu.me/blog/best-practice-for-pull-requests-on-github)
-
 ## FAQs
 
 ### What's the defination of endemic species in AES?
