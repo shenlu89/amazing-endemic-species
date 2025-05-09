@@ -32,29 +32,29 @@ export default function API() {
         <h2 id="random">Random</h2>
         <p>To get a species randomly:</p>
         <CustomPre>/api/v1/random</CustomPre>
-        <Link href="/api/v1/random">Example: Random species</Link>
+        <Link href="/api/v1/random" target="_blank">Example: Random species</Link>
         <hr />
         <h2 id="species">Species</h2>
         <p>To get all species:</p>
         <CustomPre>/api/v1/species</CustomPre>
-        <Link href="/api/v1/species">Example: All species</Link>
+        <Link href="/api/v1/species" target="_blank">Example: All species</Link>
         <hr />
         <h2 id="speciescount">Species Count</h2>
         <p>To get total count of species:</p>
         <CustomPre>/api/v1/speciescount</CustomPre>
-        <Link href="/api/v1/speciescount">Example: Total count of species</Link>
+        <Link href="/api/v1/speciescount" target="_blank">Example: Total count of species</Link>
         <hr />
         <h2 id="country">Country</h2>
         <p>To get all ISO code of countries and regions:</p>
         <CustomPre>/api/v1/country</CustomPre>
-        <Link href="/api/v1/country">
+        <Link href="/api/v1/country" target="_blank">
           Example: All ISO code of countries and regions
         </Link>
         <hr />
         <h2 id="countrycount">Country Count</h2>
         <p>To get total count of countries and regions:</p>
         <CustomPre>/api/v1/countrycount</CustomPre>
-        <Link href="/api/v1/countrycount">
+        <Link href="/api/v1/countrycount" target="_blank">
           Example: Total count of countries and regions
         </Link>
         <hr />
@@ -64,7 +64,7 @@ export default function API() {
         </p>
         <CustomPre>/api/v1/version</CustomPre>
         <p>
-          <Link href="/api/v1/version">Example: API reference version</Link>
+          <Link href="/api/v1/version" target="_blank">Example: API reference version</Link>
         </p>
       </section>
     </article>
