@@ -10,16 +10,14 @@ export const metadata: Metadata = apiPage.metadata;
 
 export default function API() {
   return (
-    <article className="flex flex-col max-w-screen-lg container mx-auto justify-center relative prose">
+    <article className="flex flex-col max-w-screen-lg container mx-auto justify-center relative prose px-4">
       <h1>API Reference</h1>
       <p>
         {`The data in the Amazing Endemic Species API is compiled and released
-        based on information from the IUCN Red List API. It gathers ${
-          AES.length
-        }
-        endemic species from ${
-          new Set(AES.map((item) => item.iso_code)).size
-        } different countries and regions until now.`}
+        based on information from the IUCN Red List API. It gathers ${AES.length
+          }
+        endemic species from ${new Set(AES.map((item) => item.iso_code)).size
+          } different countries and regions until now.`}
       </p>
       <ul>
         {apiPage.apis.map((apis, index) => (

@@ -15,12 +15,12 @@ export const runtime = "edge";
 const Header: NextPage = () => {
   const pathname = usePathname();
   return (
-    <header className="flex justify-between w-full md:border-none border-t-[1px] md:p-4 select-none md:relative fixed inset-x-0 bottom-0 z-50">
+    <header className="flex mb-0 md:mb-4 justify-between max-w-screen-lg mx-auto w-full md:border-none border-t-[1px] border-slate-300 md:p-4 select-none md:relative fixed inset-x-0 bottom-0 z-50">
       <div className="md:flex hidden space-x-4">
         <div className="md:flex hidden items-center">
           <Link className="flex items-center" href={"/"}>
             <Image src={"/logo.svg"} width="24" height="24" alt={""} priority />
-            <span className="flex self-center font-extrabold px-2">
+            <span className="flex text-lg self-center font-extrabold px-2">
               Amazing Endemic Species
             </span>
           </Link>
@@ -39,7 +39,6 @@ const Header: NextPage = () => {
       </div>
       <nav className="flex flex-row w-full md:space-x-4 space-x-0 md:w-auto">
         <AddMoreSpecies />
-        {/* <ShareButton /> */}
         <div className="hidden md:flex h-full border-y-transparent border-l-transparent border border-r-slate-200"></div>
         <div className="flex text-sm items-center md:justify-start space-x-2 justify-between md:px-0 w-full md:w-auto md:bg-transparent bg-white">
           {headerNavLinks?.map((nav) => (

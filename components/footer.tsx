@@ -6,7 +6,7 @@ export const runtime = "edge";
 
 const Footer: NextPage = () => {
   return (
-    <footer className="md:flex w-full items-center select-none text-slate-600">
+    <footer className="md:flex max-w-screen-lg mx-auto w-full items-center select-none text-slate-600">
       <div className="flex items-center flex-col-reverse md:flex-row md:mb-0 mb-4 justify-between w-full">
         <p className="m-4">
           © {`${new Date().getFullYear()} `}

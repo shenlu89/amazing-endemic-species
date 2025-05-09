@@ -60,7 +60,7 @@ export default function Explore() {
     );
   };
   return (
-    <section className="flex flex-col h-full max-w-screen-lg container mx-auto relative items-start space-y-4">
+    <section className="flex flex-col h-full max-w-screen-lg container mx-auto relative items-start space-y-4 px-0 md:px-2">
       <form
         onSubmit={onSearch}
         className="flex flex-col md:flex-row w-full justify-between px-2"
@@ -113,7 +113,7 @@ export default function Explore() {
               key={index}
               className="flex relative text-slate-600 items-center rounded md:w-1/2 w-full"
             >
-              <div className="flex m-2 space-x-4 bg-slate-100 border border-slate-300 justify-between p-4 w-full">
+              <div className="flex m-2 space-x-4 bg-slate-100 border border-slate-300 justify-between rounded p-4 w-full">
                 <div className="flex flex-col space-y-2 text-sm no-wrap truncate w-48">
                   <div className="flex animate-pulse h-5 bg-slate-300 w-36"></div>
                   <div className="flex animate-pulse h-5 bg-slate-200 w-full"></div>
