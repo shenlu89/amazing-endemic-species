@@ -63,7 +63,7 @@ const SpeciesItem = ({ children, ...props }: any): ReactElement => {
         </Link>
         <Link
           href={WIKI_URI + CONSERVATION_STATUS.get(conservation_status)}
-          className={`flex absolute top-6 right-6 text-sm items-center ${conservation_status} justify-center rounded-full w-8 h-8 font-bold`}
+          className={`flex absolute top-8 right-8 text-sm items-center ${conservation_status} justify-center rounded-full w-8 h-8 font-bold`}
         >
           {conservation_status}
         </Link>
