@@ -165,8 +165,7 @@ export default function Home() {
       earth.interrupt();
     };
   }, [data, error, _loading, mutate]);
-  if (error) return <div>Fail to load!</div>;
-  if (isLoading)
+  if (isLoading || error)
     return (
       <div className="relative h-full">
         <div className="loading">
@@ -179,7 +178,7 @@ export default function Home() {
           ))}
         </div>
         <div className="flex justify-center items-center h-full text-lg">
-          Loading...
+          {error ? "Fail to load!" : "Loading..."}
         </div>
       </div>
     );
