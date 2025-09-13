@@ -265,7 +265,7 @@ export const CONSERVATION_STATUS: any = objToMap({
   EX: "Extinction",
   EW: "Extinct_in_the_wild",
   CR: "Critically_endangered",
-  EN: "Critically_endangered",
+  EN: "Endangered_species_(IUCN_status)",
   VU: "Vulnerable_species",
   NT: "Near-threatened_species",
   LC: "Least_concern",
