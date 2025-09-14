@@ -2,8 +2,6 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 
-export const runtime = "edge";
-
 const Footer: NextPage = () => {
   return (
     <footer className="md:flex max-w-screen-lg mx-auto w-full items-center select-none text-slate-600">
