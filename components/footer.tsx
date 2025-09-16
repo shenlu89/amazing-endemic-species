@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Link from "next/link";
+import Link from "@/components/custom-link";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 
 const Footer: NextPage = () => {
@@ -11,7 +11,6 @@ const Footer: NextPage = () => {
           <Link
             href="https://shenlu.me"
             className="hover:text-black hover:underline underline-offset-[3px]"
-            target={"_blank"}
           >
             Shen Lu
           </Link>
