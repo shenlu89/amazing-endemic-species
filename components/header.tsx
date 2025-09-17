@@ -71,8 +71,7 @@ const Header: NextPage = () => {
               )}
               {nav?.name === "AddMoreSpecies" && (
                 <BsFillPlusCircleFill
-                  className={`w-8 h-8 m-auto ${
-                    // pathname === "/addmorespecies" &&
+                  className={`w-8 h-8 m-auto ${pathname === "/addmorespecies" &&
                     "fill-slate-300" && "fill-red-600"
                     }`}
                 />
