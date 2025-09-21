@@ -28,7 +28,9 @@ export default function Explore() {
   );
 
   const [sortType, setSortType] = useState<any>({ name: "Taxonomy ID" });
-  const [sortDirection, setSortDirection] = useState<string>("desc");
+  const [sortDirection, setSortDirection] = useState<string>(
+    searchParams?.get("sortDirection") || "asc"
+  );
   const createQueryString = useCallback(
     (queryParams: { name: string; value: string }[]) => {
       const params = new URLSearchParams(searchParams as any);
@@ -46,13 +48,6 @@ export default function Explore() {
   const onSearch = (event: FormEvent) => {
     event.preventDefault();
     const encodedSearchQuery = encodeURI(searchQuery || "");
-    history.pushState(
-      null,
-      "",
-      `${pathname}?${createQueryString([
-        { name: "q", value: encodedSearchQuery },
-      ])}`
-    );
     router.push(
       `${pathname}?${createQueryString([
         { name: "q", value: encodedSearchQuery },
@@ -85,14 +80,15 @@ export default function Explore() {
           <div
             className="cursor-pointer text-red-600"
             onClick={() => {
-              setSortDirection(sortDirection === "asc" ? "desc" : "asc");
+              const nextDirection = sortDirection === "asc" ? "desc" : "asc";
+              setSortDirection(nextDirection);
               router.push(
                 pathname +
                 "?" +
                 createQueryString([
                   {
                     name: "sortDirection",
-                    value: sortDirection,
+                    value: nextDirection,
                   },
                 ])
               );
