@@ -1,17 +1,17 @@
 import { FormEvent, useRef, useCallback, useEffect } from "react";
 
 import { HiOutlineMagnifyingGlass, HiXCircle } from "react-icons/hi2";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import useKeyPress from "@/hooks/use-key-press";
 
 export default function SearchBar({
   searchQuery,
   setSearchQuery,
-  searchParams,
 }: any) {
   const searchInput = useRef<HTMLInputElement>(null);
   const pathname = usePathname();
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const createQueryString = useCallback(
     (queryParams: { name: string; value: string }[]) => {
@@ -29,7 +29,7 @@ export default function SearchBar({
   );
 
   useEffect(() => {
-    setSearchQuery(searchParams ? searchParams["q"] : "");
+    setSearchQuery(searchParams?.get("q") || "");
   }, [searchParams, setSearchQuery]);
 
   const clearSearch = (event: FormEvent) => {
