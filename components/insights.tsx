@@ -1,12 +1,12 @@
 "use client";
 import useSWR from "swr";
-import fetcher from "@/lib/fetcher";
-import { API_URLS } from "@/lib/constant";
 import Metric from "@/components/metric";
+import { API_URLS } from "@/lib/constant";
+import fetcher from "@/lib/fetcher";
 
 export default function Metrics() {
   const { data, isLoading } = useSWR(API_URLS, (urls) =>
-    Promise.all(urls.map((url) => fetcher(url, {})))
+    Promise.all(urls.map((url) => fetcher(url, {}))),
   );
 
   const [species, countries, views] = data || [];

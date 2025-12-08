@@ -1,7 +1,7 @@
+import { count } from "drizzle-orm";
 import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { aes } from "@/db/schema";
-import { count } from "drizzle-orm";
 
 export async function GET() {
   try {

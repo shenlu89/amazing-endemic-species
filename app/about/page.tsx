@@ -1,6 +1,6 @@
-import { aboutPage } from "@/data/meta-data";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "@/components/custom-link";
+import { aboutPage } from "@/data/meta-data";
 
 export const metadata: Metadata = aboutPage.metadata;
 
@@ -89,9 +89,9 @@ export default function About() {
       <h2>FAQs</h2>
       <h3>What's the defination of endemic species in AES?</h3>
       <p>
-        The defination of "endemic species" in AES refers to a species that is native
-        to and restricted to a specific geographical area. This area means the
-        country code,{" "}
+        The defination of "endemic species" in AES refers to a species that is
+        native to and restricted to a specific geographical area. This area
+        means the country code,{" "}
         <Link href="https://en.wikipedia.org/wiki/ISO_3166">ISO 3166</Link>.
       </p>
       <h3>Why should we pay attention for endemic species?</h3>

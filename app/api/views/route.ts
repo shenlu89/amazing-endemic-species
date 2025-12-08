@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
 import { Redis } from "@upstash/redis";
+import { NextResponse } from "next/server";
 
 const redis = Redis.fromEnv();
 
@@ -11,7 +11,7 @@ export async function GET() {
       {
         total: views?.toString(),
       },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (e: any) {
     return NextResponse.json({ message: e.message }, { status: 500 });

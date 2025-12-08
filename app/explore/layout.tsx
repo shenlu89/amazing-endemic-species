@@ -1,5 +1,5 @@
-import { explorePage } from "@/data/meta-data";
 import type { Metadata } from "next";
+import { explorePage } from "@/data/meta-data";
 
 export const metadata: Metadata = explorePage.metadata;
 

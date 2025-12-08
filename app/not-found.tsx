@@ -1,16 +1,16 @@
 "use client";
-import Image from "next/image";
-import Link from "@/components/custom-link";
-import useSWR from "swr";
-import fetcher from "@/lib/fetcher";
-import {
-  COUNTRY_NAME,
-  CONSERVATION_STATUS,
-  WIKI_URI,
-  IUCN_RED_LIST_URI,
-} from "@/lib/constant";
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
+import useSWR from "swr";
+import Link from "@/components/custom-link";
+import {
+  CONSERVATION_STATUS,
+  COUNTRY_NAME,
+  IUCN_RED_LIST_URI,
+  WIKI_URI,
+} from "@/lib/constant";
+import fetcher from "@/lib/fetcher";
 
 export default function NotFound() {
   const router = useRouter();
@@ -27,6 +27,7 @@ export default function NotFound() {
           Oh no, something went wrong... maybe refresh?
         </h1>
         <button
+          type="button"
           className="px-4 py-2 rounded-full font-bold text-sm bg-black hover:opacity-75 text-white dark:bg-white dark:text-black"
           onClick={() => router.refresh()}
         >

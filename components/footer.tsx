@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import Link from "@/components/custom-link";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import Link from "@/components/custom-link";
 
 const Footer: NextPage = () => {
   return (

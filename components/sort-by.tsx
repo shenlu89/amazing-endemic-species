@@ -5,10 +5,10 @@ import {
   ListboxOption,
   ListboxOptions,
 } from "@headlessui/react";
-import { HiCheck, HiChevronUp, HiChevronDown } from "react-icons/hi2";
-import { SORT_TYPES } from "@/lib/constant";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
-import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import { HiCheck, HiChevronDown, HiChevronUp } from "react-icons/hi2";
+import { SORT_TYPES } from "@/lib/constant";
 
 const sortTypes = [
   { name: "Taxonomy ID" },
@@ -21,7 +21,7 @@ export default function Sortby({ children, ...props }: any) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
-  const params = new URLSearchParams(searchParams as any);
+  const _params = new URLSearchParams(searchParams as any);
   const { sortType, setSortType } = props;
   const createQueryString = useCallback(
     (queryParams: { name: string; value: string }[]) => {
@@ -35,7 +35,7 @@ export default function Sortby({ children, ...props }: any) {
       });
       return params.toString();
     },
-    [searchParams]
+    [searchParams],
   );
   return (
     <div className="flex md:w-40 w-full z-50 relative">
@@ -45,13 +45,13 @@ export default function Sortby({ children, ...props }: any) {
           setSortType(st);
           router.push(
             pathname +
-            "?" +
-            createQueryString([
-              {
-                name: "sortType",
-                value: SORT_TYPES.get(st.name),
-              },
-            ])
+              "?" +
+              createQueryString([
+                {
+                  name: "sortType",
+                  value: SORT_TYPES.get(st.name),
+                },
+              ]),
           );
         }}
       >
@@ -79,16 +79,18 @@ export default function Sortby({ children, ...props }: any) {
                   key={personIdx}
                   className={({ focus, selected }) =>
                     `relative cursor-pointer select-none py-2 pl-3
-                       ${focus && !selected && "bg-red-50"} ${selected && "bg-red-100"
-                    }`
+                       ${focus && !selected && "bg-red-50"} ${
+                         selected && "bg-red-100"
+                       }`
                   }
                   value={person}
                 >
                   {({ focus, selected }) => (
                     <>
                       <span
-                        className={`block ${selected ? "text-red-500" : "font-normal"
-                          } ${focus ? "text-red-500" : "text-black"}`}
+                        className={`block ${
+                          selected ? "text-red-500" : "font-normal"
+                        } ${focus ? "text-red-500" : "text-black"}`}
                       >
                         {person.name}
                       </span>

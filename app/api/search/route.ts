@@ -1,5 +1,5 @@
+import { asc, desc, like, or } from "drizzle-orm";
 import { NextResponse } from "next/server";
-import { or, like, asc, desc } from "drizzle-orm";
 import { db } from "@/db";
 import { aes } from "@/db/schema";
 
@@ -36,8 +36,8 @@ export async function GET(request: Request) {
         or(
           like(aes.common_name, `%${query}%`),
           like(aes.scientific_name, `%${query}%`),
-          like(aes.iso_code, `%${query}%`)
-        )
+          like(aes.iso_code, `%${query}%`),
+        ),
       )
       .orderBy(orderByColumn(sortType, sortDirection));
     return NextResponse.json({

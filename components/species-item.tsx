@@ -1,14 +1,14 @@
 "use client";
-import { ReactElement } from "react";
+import getUnicodeFlagIcon from "country-flag-icons/unicode";
 import Image from "next/image";
+import type { ReactElement } from "react";
+import Link from "@/components/custom-link";
 import {
   CONSERVATION_STATUS,
   COUNTRY_NAME,
   IUCN_RED_LIST_URI,
   WIKI_URI,
 } from "@/lib/constant";
-import Link from "@/components/custom-link";
-import getUnicodeFlagIcon from "country-flag-icons/unicode";
 
 const SpeciesItem = ({ children, ...props }: any): ReactElement => {
   const { imageUrl, species, className } = props;
@@ -48,7 +48,7 @@ const SpeciesItem = ({ children, ...props }: any): ReactElement => {
           >
             <span className="hidden md:flex">Country:</span>
             <span className="text-black font-bold hover:text-red-600">{`${getUnicodeFlagIcon(
-              iso_code
+              iso_code,
             )} ${COUNTRY_NAME.get(iso_code)}`}</span>
           </Link>
         </div>

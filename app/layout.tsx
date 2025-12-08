@@ -1,12 +1,11 @@
 import "./globals.css";
-import { ReactNode } from "react";
-import localFont from "@/lib/local-font";
-
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Script from "next/script";
+import type { ReactNode } from "react";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import { homePage } from "@/data/meta-data";
+import localFont from "@/lib/local-font";
 
 export const metadata: Metadata = homePage.metadata;
 

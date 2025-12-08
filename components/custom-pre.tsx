@@ -1,14 +1,14 @@
 "use client";
 import {
-  ComponentProps,
-  ReactElement,
+  Children,
+  type ComponentProps,
+  type ReactElement,
   useCallback,
   useEffect,
   useState,
-  Children,
 } from "react";
 
-import { LuCopy, LuCheck } from "react-icons/lu";
+import { LuCheck, LuCopy } from "react-icons/lu";
 
 const CustomPre = ({ children, ...props }: any): ReactElement => {
   const [isCopied, setCopied] = useState(false);

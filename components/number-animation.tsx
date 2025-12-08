@@ -1,5 +1,5 @@
+import { useEffect, useState } from "react";
 import { formatNumber } from "@/lib/utils";
-import { useState, useEffect } from "react";
 
 export default function NumberAnimation({ count, className }: any) {
   const [number, setNumber] = useState(0);
@@ -18,7 +18,7 @@ export default function NumberAnimation({ count, className }: any) {
     };
     requestAnimationFrame(step);
     return () => cancelAnimationFrame(start);
-  }, []);
+  }, [count]);
 
   return <div className={className}>{formatNumber(number)}</div>;
 }

@@ -1,35 +1,35 @@
 "use client";
-import SearchBar from "@/components/search-bar";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { FormEvent, useCallback, useState } from "react";
-import SpeciesItem from "@/components/species-item";
-import SortBy from "@/components/sort-by";
-import useSWR from "swr";
-import fetcher from "@/lib/fetcher";
+import { type FormEvent, useCallback, useState } from "react";
 import { BsSortDownAlt, BsSortUp } from "react-icons/bs";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
+import useSWR from "swr";
+import SearchBar from "@/components/search-bar";
+import SortBy from "@/components/sort-by";
+import SpeciesItem from "@/components/species-item";
+import fetcher from "@/lib/fetcher";
 
 export const runtime = "edge";
 
 export default function Explore() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState<string>(
-    searchParams?.get("q") || ""
+    searchParams?.get("q") || "",
   );
   const router = useRouter();
   const pathname = usePathname();
   const params = new URLSearchParams(searchParams as any);
-  let { data, isLoading }: any = useSWR(
+  const { data, isLoading }: any = useSWR(
     `/api/search?${params.toString()}`,
     fetcher,
     {
       keepPreviousData: true,
-    }
+    },
   );
 
   const [sortType, setSortType] = useState<any>({ name: "Taxonomy ID" });
   const [sortDirection, setSortDirection] = useState<string>(
-    searchParams?.get("sortDirection") || "asc"
+    searchParams?.get("sortDirection") || "asc",
   );
   const createQueryString = useCallback(
     (queryParams: { name: string; value: string }[]) => {
@@ -43,7 +43,7 @@ export default function Explore() {
       });
       return params.toString();
     },
-    [searchParams]
+    [searchParams],
   );
   const onSearch = (event: FormEvent) => {
     event.preventDefault();
@@ -51,7 +51,7 @@ export default function Explore() {
     router.push(
       `${pathname}?${createQueryString([
         { name: "q", value: encodedSearchQuery },
-      ])}`
+      ])}`,
     );
   };
   return (
@@ -84,13 +84,13 @@ export default function Explore() {
               setSortDirection(nextDirection);
               router.push(
                 pathname +
-                "?" +
-                createQueryString([
-                  {
-                    name: "sortDirection",
-                    value: nextDirection,
-                  },
-                ])
+                  "?" +
+                  createQueryString([
+                    {
+                      name: "sortDirection",
+                      value: nextDirection,
+                    },
+                  ]),
               );
             }}
           >

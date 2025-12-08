@@ -1,13 +1,9 @@
-import { FormEvent, useRef, useCallback, useEffect } from "react";
-
-import { HiOutlineMagnifyingGlass, HiXCircle } from "react-icons/hi2";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { type FormEvent, useCallback, useEffect, useRef } from "react";
+import { HiOutlineMagnifyingGlass, HiXCircle } from "react-icons/hi2";
 import useKeyPress from "@/hooks/use-key-press";
 
-export default function SearchBar({
-  searchQuery,
-  setSearchQuery,
-}: any) {
+export default function SearchBar({ searchQuery, setSearchQuery }: any) {
   const searchInput = useRef<HTMLInputElement>(null);
   const pathname = usePathname();
   const router = useRouter();
@@ -25,7 +21,7 @@ export default function SearchBar({
       });
       return params.toString();
     },
-    [searchParams]
+    [searchParams],
   );
 
   useEffect(() => {
@@ -57,8 +53,9 @@ export default function SearchBar({
       <HiOutlineMagnifyingGlass className="absolute text-slate-400 top-1/2 transform translate-y-[-50%] left-3 w-5 h-5" />
       <HiXCircle
         onClick={clearSearch}
-        className={`${searchQuery || "hidden"
-          } absolute top-1/2 transform translate-y-[-50%] right-3 w-5 h-5 text-slate-400 cursor-pointer hover:text-slate-600`}
+        className={`${
+          searchQuery || "hidden"
+        } absolute top-1/2 transform translate-y-[-50%] right-3 w-5 h-5 text-slate-400 cursor-pointer hover:text-slate-600`}
       />
     </div>
   );

@@ -1,23 +1,24 @@
 "use client";
-import { geoOrthographic, interpolate, geoCentroid, geoPath, select } from "d3";
-import { feature } from "topojson-client";
-import { useEffect, useRef, useState } from "react";
-import { useDebouncedCallback } from "use-debounce";
-import fetcher from "@/lib/fetcher";
-import useSWR, { useSWRConfig } from "swr";
-import { random } from "@/lib/utils";
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
+import { geoCentroid, geoOrthographic, geoPath, interpolate, select } from "d3";
 import dynamic from "next/dynamic";
-
-import {
-  COUNTRY_NAME,
-  CONSERVATION_STATUS,
-  WIKI_URI,
-  IUCN_RED_LIST_URI,
-  ISO_MAP,
-} from "@/lib/constant";
+import { useEffect, useRef, useState } from "react";
+import useSWR, { useSWRConfig } from "swr";
+import { feature } from "topojson-client";
+import { useDebouncedCallback } from "use-debounce";
 import Link from "@/components/custom-link";
 import AES from "@/data/aes.json";
+
+import {
+  CONSERVATION_STATUS,
+  COUNTRY_NAME,
+  ISO_MAP,
+  IUCN_RED_LIST_URI,
+  WIKI_URI,
+} from "@/lib/constant";
+import fetcher from "@/lib/fetcher";
+import { random } from "@/lib/utils";
+
 const Insights = dynamic(() => import("@/components/insights"));
 
 const randomSpecies = AES[Math.floor(AES.length * Math.random())];
@@ -32,8 +33,9 @@ export default function Home() {
       common_name: "",
     },
     {
-      image: `${typeof location !== "undefined" && location.origin}/images/${randomSpecies.id
-        }.jpg`,
+      image: `${typeof location !== "undefined" && location.origin}/images/${
+        randomSpecies.id
+      }.jpg`,
       ...randomSpecies,
     },
   ]);
@@ -194,16 +196,18 @@ export default function Home() {
             <div
               style={{
                 animationDelay: `${index * 15}ms`,
-                transform: `translate3d(${random(-300, 300) | 0}px, ${random(-300, 300) | 0
-                  }px, ${random(-300, 300) | 0}px)`,
+                transform: `translate3d(${random(-300, 300) | 0}px, ${
+                  random(-300, 300) | 0
+                }px, ${random(-300, 300) | 0}px)`,
               }}
-              className={`text-fly-in transform-gpu ${char === " " ? "inline" : "inline-block"
-                }`}
+              className={`text-fly-in transform-gpu ${
+                char === " " ? "inline" : "inline-block"
+              }`}
               key={index}
             >
               {char}
             </div>
-          )
+          ),
         )}
       </h2>
       {process.env.NODE_ENV === "production" && <Insights />}
@@ -217,8 +221,9 @@ export default function Home() {
               width={130}
               height={130}
               alt={species[0]?.scientific_name}
-              className={`rounded-full shadow ${species[0]?.image || "opacity-0"
-                }  `}
+              className={`rounded-full shadow ${
+                species[0]?.image || "opacity-0"
+              }  `}
             />
           </Link>
           {!_loading && (
@@ -252,9 +257,11 @@ export default function Home() {
           <Link
             href={WIKI_URI + COUNTRY_NAME.get(species[0]?.iso_code)}
             className="hover:text-red-600"
-          >{`${species[0].iso_code && getUnicodeFlagIcon(species[0]?.iso_code)
-            } ${species[0].iso_code && COUNTRY_NAME.get(species[0]?.iso_code)
-            }`}</Link>
+          >{`${
+            species[0].iso_code && getUnicodeFlagIcon(species[0]?.iso_code)
+          } ${
+            species[0].iso_code && COUNTRY_NAME.get(species[0]?.iso_code)
+          }`}</Link>
         </div>
       </div>
       <img

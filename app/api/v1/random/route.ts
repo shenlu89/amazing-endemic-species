@@ -1,7 +1,7 @@
+import { sql } from "drizzle-orm";
 import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { aes } from "@/db/schema";
-import { sql } from "drizzle-orm";
 
 export const revalidate = 0;
 
@@ -17,7 +17,7 @@ export async function GET(req: any) {
         image: req.url.replace("api/v1/random", `images/${random.id}.jpg`),
         ...random,
       },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (e: any) {
     return NextResponse.json({ message: e.message }, { status: 500 });

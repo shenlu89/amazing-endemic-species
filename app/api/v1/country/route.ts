@@ -9,7 +9,7 @@ export async function GET() {
       .from(aes);
     return NextResponse.json(
       iso_codes.map((code) => code.iso_code),
-      { status: 200 }
+      { status: 200 },
     );
   } catch (e: any) {
     return NextResponse.json({ message: e.message }, { status: 500 });

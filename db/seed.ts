@@ -1,6 +1,6 @@
+import AES from "@/data/aes.json";
 import { db } from "@/db";
 import { aes } from "@/db/schema";
-import AES from "@/data/aes.json";
 
 async function seed() {
   await db.delete(aes);
