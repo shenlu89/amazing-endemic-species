@@ -1,6 +1,7 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { type FormEvent, useCallback, useEffect, useRef } from "react";
 import { HiOutlineMagnifyingGlass, HiXCircle } from "react-icons/hi2";
+import { LuCircleX } from "react-icons/lu";
 import useKeyPress from "@/hooks/use-key-press";
 
 export default function SearchBar({ searchQuery, setSearchQuery }: any) {
@@ -51,11 +52,10 @@ export default function SearchBar({ searchQuery, setSearchQuery }: any) {
         placeholder={`Type "/" to search by species name and country.`}
       />
       <HiOutlineMagnifyingGlass className="absolute text-slate-400 top-1/2 transform translate-y-[-50%] left-3 w-5 h-5" />
-      <HiXCircle
+      <LuCircleX
         onClick={clearSearch}
-        className={`${
-          searchQuery || "hidden"
-        } absolute top-1/2 transform translate-y-[-50%] right-3 w-5 h-5 text-slate-400 cursor-pointer hover:text-slate-600`}
+        className={`${searchQuery || "hidden"
+          } absolute top-1/2 transform translate-y-[-50%] right-3 w-5 h-5 text-slate-400 cursor-pointer hover:text-slate-600`}
       />
     </div>
   );
