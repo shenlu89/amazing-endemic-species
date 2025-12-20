@@ -34,7 +34,7 @@ export default function Explore() {
   const createQueryString = useCallback(
     (queryParams: { name: string; value: string }[]) => {
       const params = new URLSearchParams(searchParams as any);
-      queryParams.map((param) => {
+      queryParams.forEach((param) => {
         if (!param.value) {
           params.delete(param.name);
         } else {
@@ -77,7 +77,8 @@ export default function Explore() {
           results.
         </div>
         <div className="flex items-center space-x-2">
-          <div
+          <button
+            type="button"
             className="cursor-pointer text-red-600"
             onClick={() => {
               const nextDirection = sortDirection === "asc" ? "desc" : "asc";
@@ -93,13 +94,14 @@ export default function Explore() {
                   ]),
               );
             }}
+            aria-label="Toggle sort direction"
           >
             {sortDirection === "desc" ? (
               <BsSortDownAlt title="Descending Order" className="w-6 h-6" />
             ) : (
               <BsSortUp title="Ascending Order" className="w-6 h-6" />
             )}
-          </div>
+          </button>
         </div>
       </div>
       {isLoading ? (
