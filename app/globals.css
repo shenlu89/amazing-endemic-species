@@ -6,32 +6,32 @@ button {
 }
 
 .prose a {
-  color: theme('colors.blue.600');
+  color: theme("colors.blue.600");
   /* #2563eb */
 }
 
 .prose a:hover {
-  color: theme('colors.blue.800');
+  color: theme("colors.blue.800");
   /* #1e40af */
 }
 
 .prose h1 {
-  font-size: theme('fontSize.2xl');
+  font-size: theme("fontSize.2xl");
   /* 1.5rem */
 }
 
 .prose h2 {
-  font-weight: theme('fontWeight.extrabold');
+  font-weight: theme("fontWeight.extrabold");
   /* 800 */
-  font-size: theme('fontSize.xl');
+  font-size: theme("fontSize.xl");
   /* 1.25rem */
   margin-top: 0;
 }
 
 .prose h3 {
-  font-weight: theme('fontWeight.extrabold');
+  font-weight: theme("fontWeight.extrabold");
   /* 800 */
-  font-size: theme('fontSize.lg');
+  font-size: theme("fontSize.lg");
   /* 1.125rem */
   margin-top: 0;
 }
@@ -42,7 +42,7 @@ button {
 }
 
 .prose p {
-  color: theme('colors.slate.800');
+  color: theme("colors.slate.800");
   /* #1e293b */
   margin-top: 0;
 }
