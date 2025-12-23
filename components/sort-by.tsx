@@ -21,7 +21,6 @@ export default function Sortby({ children, ...props }: any) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
-  const _params = new URLSearchParams(searchParams as any);
   const { sortType, setSortType } = props;
   const createQueryString = useCallback(
     (queryParams: { name: string; value: string }[]) => {
