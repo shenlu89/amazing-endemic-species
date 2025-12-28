@@ -9,8 +9,6 @@ import SortBy from "@/components/sort-by";
 import SpeciesItem from "@/components/species-item";
 import fetcher from "@/lib/fetcher";
 
-export const runtime = "edge";
-
 export default function Explore() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState<string>(
@@ -85,13 +83,13 @@ export default function Explore() {
               setSortDirection(nextDirection);
               router.push(
                 pathname +
-                  "?" +
-                  createQueryString([
-                    {
-                      name: "sortDirection",
-                      value: nextDirection,
-                    },
-                  ]),
+                "?" +
+                createQueryString([
+                  {
+                    name: "sortDirection",
+                    value: nextDirection,
+                  },
+                ]),
               );
             }}
             aria-label="Toggle sort direction"
