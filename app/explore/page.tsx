@@ -1,4 +1,5 @@
 "use client";
+
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { type FormEvent, useCallback, useState } from "react";
 import { BsSortDownAlt, BsSortUp } from "react-icons/bs";
@@ -9,7 +10,7 @@ import SortBy from "@/components/sort-by";
 import SpeciesItem from "@/components/species-item";
 import fetcher from "@/lib/fetcher";
 
-export default function Explore() {
+export default function ExplorePage() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState<string>(
     searchParams?.get("q") || "",
@@ -47,11 +48,10 @@ export default function Explore() {
     event.preventDefault();
     const encodedSearchQuery = encodeURI(searchQuery || "");
     router.push(
-      `${pathname}?${createQueryString([
-        { name: "q", value: encodedSearchQuery },
-      ])}`,
+      `${pathname}?${createQueryString([{ name: "q", value: encodedSearchQuery }])}`,
     );
   };
+
   return (
     <section className="flex flex-col h-full max-w-screen-lg container mx-auto relative items-start space-y-4 px-0 md:px-2">
       <form
@@ -83,13 +83,13 @@ export default function Explore() {
               setSortDirection(nextDirection);
               router.push(
                 pathname +
-                "?" +
-                createQueryString([
-                  {
-                    name: "sortDirection",
-                    value: nextDirection,
-                  },
-                ]),
+                  "?" +
+                  createQueryString([
+                    {
+                      name: "sortDirection",
+                      value: nextDirection,
+                    },
+                  ]),
               );
             }}
             aria-label="Toggle sort direction"
@@ -111,12 +111,12 @@ export default function Explore() {
             >
               <div className="flex m-2 space-x-4 bg-slate-100 border border-slate-300 justify-between rounded p-4 w-full">
                 <div className="flex flex-col space-y-2 text-sm no-wrap truncate w-48">
-                  <div className="flex animate-pulse h-5 bg-slate-300 w-36"></div>
-                  <div className="flex animate-pulse h-5 bg-slate-200 w-full"></div>
-                  <div className="flex animate-pulse h-5 bg-slate-300 w-full"></div>
-                  <div className="flex animate-pulse h-5 bg-slate-200 w-36"></div>
+                  <div className="flex animate-pulse h-5 bg-slate-300 w-36" />
+                  <div className="flex animate-pulse h-5 bg-slate-200 w-full" />
+                  <div className="flex animate-pulse h-5 bg-slate-300 w-full" />
+                  <div className="flex animate-pulse h-5 bg-slate-200 w-36" />
                 </div>
-                <div className="w-[110px] h-[110px] rounded-full animate-pulse bg-slate-300"></div>
+                <div className="w-[110px] h-[110px] rounded-full animate-pulse bg-slate-300" />
               </div>
             </div>
           ))}
