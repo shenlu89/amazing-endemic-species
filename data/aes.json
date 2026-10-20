@@ -798,5 +798,13 @@
     "group": "AMPHIBIA",
     "iso_code": "MX",
     "common_name": "Axolotl"
+  },
+  {
+    "id": 22685245,
+    "scientific_name": "Strigops habroptilus",
+    "conservation_status": "CR",
+    "group": "AVES",
+    "iso_code": "NZ",
+    "common_name": "Kakapo"
   }
 ]
