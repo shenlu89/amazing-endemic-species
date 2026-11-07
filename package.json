@@ -20,6 +20,7 @@
     "@upstash/redis": "^1.35.6",
     "country-flag-icons": "^1.6.4",
     "d3": "^7.9.0",
+    "d3-transition": "^3.0.1",
     "drizzle-orm": "^0.43.1",
     "next": "^16.0.7",
     "react": "^19.2.1",

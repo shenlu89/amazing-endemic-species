@@ -1,6 +1,10 @@
 "use client";
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
 import { geoCentroid, geoOrthographic, geoPath, interpolate, select } from "d3";
+// d3-transition patches `selection.prototype.transition` as a side effect.
+// The "d3" barrel is marked as side-effect free, so the patch gets tree-shaken
+// away unless the module is imported explicitly.
+import "d3-transition";
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import useSWR, { useSWRConfig } from "swr";

@@ -19,7 +19,14 @@ const Header: NextPage = () => {
       <div className="md:flex hidden space-x-4">
         <div className="md:flex hidden items-center">
           <Link className="flex items-center" href={"/"}>
-            <Image src={"/logo.svg"} width="24" height="24" alt={""} priority />
+            <Image
+              src={"/logo.svg"}
+              width={24}
+              height={25}
+              alt={""}
+              priority
+              className="w-6 h-auto"
+            />
             <span className="flex text-lg self-center font-extrabold px-2">
               Amazing Endemic Species
             </span>
