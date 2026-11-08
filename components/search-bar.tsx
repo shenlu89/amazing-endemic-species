@@ -54,8 +54,9 @@ export default function SearchBar({ searchQuery, setSearchQuery }: any) {
       <HiOutlineMagnifyingGlass className="absolute text-slate-400 top-1/2 transform translate-y-[-50%] left-3 w-5 h-5" />
       <LuCircleX
         onClick={clearSearch}
-        className={`${searchQuery || "hidden"
-          } absolute top-1/2 transform translate-y-[-50%] right-3 w-5 h-5 text-slate-400 cursor-pointer hover:text-slate-600`}
+        className={`${
+          searchQuery || "hidden"
+        } absolute top-1/2 transform translate-y-[-50%] right-3 w-5 h-5 text-slate-400 cursor-pointer hover:text-slate-600`}
       />
     </div>
   );

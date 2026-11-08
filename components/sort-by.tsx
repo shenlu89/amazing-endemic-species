@@ -44,13 +44,13 @@ export default function Sortby({ children, ...props }: any) {
           setSortType(st);
           router.push(
             pathname +
-            "?" +
-            createQueryString([
-              {
-                name: "sortType",
-                value: SORT_TYPES.get(st.name),
-              },
-            ]),
+              "?" +
+              createQueryString([
+                {
+                  name: "sortType",
+                  value: SORT_TYPES.get(st.name),
+                },
+              ]),
           );
         }}
       >
@@ -78,16 +78,18 @@ export default function Sortby({ children, ...props }: any) {
                   key={personIdx}
                   className={({ focus, selected }) =>
                     `relative cursor-pointer select-none py-2 pl-3
-                       ${focus && !selected && "bg-red-50"} ${selected && "bg-red-100"
-                    }`
+                       ${focus && !selected && "bg-red-50"} ${
+                         selected && "bg-red-100"
+                       }`
                   }
                   value={person}
                 >
                   {({ focus, selected }) => (
                     <>
                       <span
-                        className={`block ${selected ? "text-red-500" : "font-normal"
-                          } ${focus ? "text-red-500" : "text-black"}`}
+                        className={`block ${
+                          selected ? "text-red-500" : "font-normal"
+                        } ${focus ? "text-red-500" : "text-black"}`}
                       >
                         {person.name}
                       </span>
