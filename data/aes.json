@@ -814,5 +814,13 @@
     "group": "AVES",
     "iso_code": "NZ",
     "common_name": "Kakapo"
+  },
+  {
+    "id": 12828,
+    "scientific_name": "Marmota vancouverensis",
+    "conservation_status": "CR",
+    "group": "MAMMALIA",
+    "iso_code": "CA",
+    "common_name": "Vancouver Island Marmot"
   }
 ]
