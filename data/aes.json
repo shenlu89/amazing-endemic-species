@@ -822,5 +822,13 @@
     "group": "MAMMALIA",
     "iso_code": "CA",
     "common_name": "Vancouver Island Marmot"
+  },
+  {
+    "id": 40644,
+    "scientific_name": "Saguinus bicolor",
+    "conservation_status": "CR",
+    "group": "MAMMALIA",
+    "iso_code": "BR",
+    "common_name": "Pied Tamarin"
   }
 ]
