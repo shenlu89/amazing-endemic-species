@@ -798,5 +798,13 @@
     "group": "AMPHIBIA",
     "iso_code": "MX",
     "common_name": "Axolotl"
+  },
+  {
+    "id": 3339,
+    "scientific_name": "Burramys parvus",
+    "conservation_status": "CR",
+    "group": "MAMMALIA",
+    "iso_code": "AU",
+    "common_name": "Mountain Pygmy Possum"
   }
 ]
