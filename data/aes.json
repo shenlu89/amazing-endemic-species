@@ -830,5 +830,13 @@
     "group": "MAMMALIA",
     "iso_code": "BR",
     "common_name": "Pied Tamarin"
+  },
+  {
+    "id": 22731646,
+    "scientific_name": "Celeus obrieni",
+    "conservation_status": "VU",
+    "group": "AVES",
+    "iso_code": "BR",
+    "common_name": "Kaempfer's Woodpecker"
   }
 ]
