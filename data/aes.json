@@ -838,5 +838,13 @@
     "group": "AVES",
     "iso_code": "BR",
     "common_name": "Kaempfer's Woodpecker"
+  },
+  {
+    "id": 55019,
+    "scientific_name": "Hyalinobatrachium ibama",
+    "conservation_status": "LC",
+    "group": "AMPHIBIA",
+    "iso_code": "CO",
+    "common_name": "Hyalinobatrachium ibama"
   }
 ]
