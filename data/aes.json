@@ -846,5 +846,13 @@
     "group": "AMPHIBIA",
     "iso_code": "CO",
     "common_name": "Hyalinobatrachium ibama"
+  },
+  {
+    "id": 176297,
+    "scientific_name": "Brookesia stumpffi",
+    "conservation_status": "LC",
+    "group": "REPTILIA",
+    "iso_code": "MG",
+    "common_name": "Plated Leaf Chameleon"
   }
 ]
