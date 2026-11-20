@@ -862,5 +862,13 @@
     "group": "PLANTAE",
     "iso_code": "MX",
     "common_name": "Golf ball"
+  },
+  {
+    "id": 134826,
+    "scientific_name": "Madagapotamon humberti",
+    "conservation_status": "LC",
+    "group": "MALACOSTRACA",
+    "iso_code": "MG",
+    "common_name": "Madagapotamon humberti"
   }
 ]
